@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="480" viewBox="0 0 640 480">
+  <rect width="640" height="480" fill="#f2f2f2"/>
+  <g fill="none" stroke="#c9c9c9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="200" cy="330" r="58"/>
+    <circle cx="452" cy="330" r="58"/>
+    <path d="M140 300h90l70-90h110l60 90h40"/>
+    <path d="M300 210l-30-70h60"/>
+  </g>
+  <text x="320" y="130" font-family="Montserrat,Arial" font-size="34" font-weight="700" fill="#b8b8b8" text-anchor="middle">YADEA</text>
+  <text x="320" y="440" font-family="Arial" font-size="20" fill="#b8b8b8" text-anchor="middle">Image unavailable</text>
+</svg>
