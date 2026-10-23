@@ -1,0 +1,64 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="ne-hero">
+  <div class="ne-hero-overlay"></div>
+  <div class="ne-hero-inner">
+    <h1 class="ne-hero-title">News &amp; Events</h1>
+  </div>
+</section>
+
+<!-- ===================== GRID ===================== -->
+<section class="ne-section">
+  <div class="ne-inner">
+
+    <!-- filter tabs -->
+    <ul class="ne-filters" id="neFilters">
+      <li><span class="ne-filters-item ne-active" data-filter="*">All Posts</span></li>
+      <% cats.forEach(function (c) { %>
+        <li><span class="ne-filters-item" data-filter="<%= c.category %>"><%= c.category.replace(/-/g, ' ') %></span></li>
+      <% }); %>
+    </ul>
+
+    <% if (posts.length) { %>
+    <div class="ne-grid" id="neGrid">
+      <% posts.forEach(function (p) { %>
+        <article class="ne-card" data-cat="<%= p.category %>">
+          <a href="/news-events/<%= p.slug %>" class="ne-media">
+            <img src="<%= p.image %>" alt="<%= p.title %>" loading="lazy"
+                 onerror="this.onerror=null;this.src='/img/placeholder.png'">
+            <div class="ne-media-hover"><span>Read More</span></div>
+          </a>
+          <div class="ne-body">
+            <h2 class="ne-title"><a href="/news-events/<%= p.slug %>"><%= p.title %></a></h2>
+            <div class="ne-date"><%= p.published_at %></div>
+          </div>
+        </article>
+      <% }); %>
+    </div>
+    <% } else { %>
+      <div class="ne-empty">No posts found.</div>
+    <% } %>
+
+  </div>
+</section>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('#neFilters .ne-filters-item');
+  var cards = document.querySelectorAll('#neGrid .ne-card');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.remove('ne-active'); });
+      t.classList.add('ne-active');
+      var f = t.dataset.filter;
+      cards.forEach(function (c) {
+        c.style.display = (f === '*' || c.dataset.cat === f) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+
+<%- include('partials/footer') %>

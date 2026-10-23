@@ -1,0 +1,49 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="banner-bg text-white py-20 text-center px-4">
+  <div class="max-w-3xl mx-auto space-y-3">
+    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Secure Checkout</span>
+    <h1 class="font-montserrat font-black text-4xl sm:text-5xl tracking-wide">Checkout</h1>
+  </div>
+</section>
+
+<main id="content" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+    <form method="POST" action="/checkout" class="lg:col-span-2 bg-white rounded-3xl border border-gray-100 shadow-sm p-8">
+      <h2 class="font-montserrat font-extrabold text-xl text-gray-900 mb-6">Billing details</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div><label class="field-label">Full Name *</label><input name="name" required class="field-input"></div>
+        <div><label class="field-label">Phone *</label><input name="phone" required class="field-input"></div>
+        <div><label class="field-label">Email</label><input type="email" name="email" class="field-input"></div>
+        <div><label class="field-label">City *</label><input name="city" required class="field-input"></div>
+        <div class="sm:col-span-2"><label class="field-label">Address *</label><input name="address" required class="field-input"></div>
+        <div class="sm:col-span-2"><label class="field-label">Order notes</label><textarea name="note" rows="3" placeholder="Delivery instructions..." class="field-input"></textarea></div>
+        <div class="sm:col-span-2">
+          <label class="field-label">Payment method</label>
+          <select name="payment" class="field-input">
+            <option value="cod">Cash on Delivery</option>
+            <option value="bank">Bank Transfer</option>
+            <option value="card">Card on Delivery</option>
+          </select>
+        </div>
+      </div>
+      <button class="mt-6 pill-btn pill-black" type="submit">Place Order</button>
+    </form>
+
+    <div class="bg-brand-dark text-white rounded-3xl p-8 shadow-lg">
+      <h3 class="font-montserrat font-extrabold text-lg mb-6">Your order</h3>
+      <div class="space-y-3 text-sm">
+        <% items.forEach(function (i) { %>
+          <div class="flex justify-between text-gray-300"><span><%= i.name %> &times; <%= i.qty %></span><strong class="text-white"><%= money(i.price * i.qty) %></strong></div>
+        <% }); %>
+        <div class="border-t border-gray-700 pt-3 flex justify-between font-montserrat font-bold text-lg">
+          <span>Total</span><span class="text-brand-orange"><%= money(subtotal) %></span>
+        </div>
+      </div>
+      <p class="text-[11px] text-gray-400 mt-6 leading-relaxed">Shipping &amp; registration charges are calculated separately by your dealer.</p>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

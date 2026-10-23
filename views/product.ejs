@@ -1,0 +1,139 @@
+<%- include('partials/head', { metaDesc: m.short_description }) %>
+<%- include('partials/header') %>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+  <nav class="text-xs text-gray-400 flex items-center gap-2">
+    <a href="/" class="hover:text-brand-orange">Home</a><i class="fa-solid fa-chevron-right text-[8px]"></i>
+    <a href="/products" class="hover:text-brand-orange">Products</a><i class="fa-solid fa-chevron-right text-[8px]"></i>
+    <span class="text-gray-700 font-semibold"><%= m.name %></span>
+  </nav>
+</div>
+
+<main id="content">
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start pdp">
+      <div>
+        <div class="bg-gradient-to-b from-gray-100 to-gray-200 rounded-3xl p-8 sm:p-12 flex items-center justify-center min-h-[380px] border border-gray-200">
+          <img id="galleryMain" src="<%= m.hero_image %>" alt="<%= m.name %>" class="max-h-[360px] w-auto object-contain drop-shadow-2xl"
+               onerror="this.onerror=null;this.src='/img/placeholder.png'">
+        </div>
+        <% if (m.gallery.length > 1) { %>
+          <div class="thumbs flex gap-3 mt-4 overflow-x-auto custom-scrollbar pb-2">
+            <% m.gallery.forEach(function (g, i) { %>
+              <img src="<%= g %>" alt="<%= m.name %> <%= i + 1 %>"
+                   class="w-20 h-20 object-contain bg-gray-50 rounded-xl border-2 <%= i === 0 ? 'active border-brand-orange' : 'border-gray-200' %> cursor-pointer p-2 hover:border-brand-orange transition-colors"
+                   onerror="this.onerror=null;this.src='/img/placeholder.png'">
+            <% }); %>
+          </div>
+        <% } %>
+      </div>
+
+      <div class="space-y-5">
+        <div>
+          <span class="text-[11px] font-semibold text-brand-orange uppercase tracking-widest"><%= m.category || 'Electric Scooter' %></span>
+          <h1 class="font-montserrat font-black text-3xl sm:text-4xl text-gray-900 mt-1"><%= m.name %></h1>
+          <% if (m.tagline) { %><p class="text-sm text-gray-500 mt-1"><%= m.tagline %></p><% } %>
+        </div>
+
+        <div class="font-montserrat font-black text-3xl text-brand-orange">
+          <%= m.price > 0 ? money(m.price) : 'Contact for price' %>
+        </div>
+        <p class="text-xs text-gray-400">Price in Pakistan. Shipping &amp; registration extra. Prices may vary by city.</p>
+
+        <% if (m.stock_status === 'out-of-stock') { %>
+          <span class="inline-block bg-red-50 text-red-600 border border-red-200 text-xs font-semibold px-4 py-1.5 rounded-full">Currently out of stock</span>
+        <% } else { %>
+          <span class="inline-block bg-green-50 text-green-600 border border-green-200 text-xs font-semibold px-4 py-1.5 rounded-full">In stock</span>
+        <% } %>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+          <form method="POST" action="/cart/add">
+            <input type="hidden" name="slug" value="<%= m.slug %>">
+            <button class="pill-btn pill-black disabled:opacity-50" type="submit" <%= m.stock_status === 'out-of-stock' ? 'disabled' : '' %>>Add to Cart</button>
+          </form>
+          <a href="/test-drive?model=<%= encodeURIComponent(m.name) %>" class="px-8 py-3 bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 font-semibold rounded-md text-xs uppercase tracking-wider transition-colors shadow-sm">Book a Test Ride</a>
+        </div>
+
+        <% if (m.specs.length) { %>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+          <% m.specs.slice(0, 4).forEach(function (s) { %>
+            <div class="bg-white/80 backdrop-blur-sm p-3 rounded-md shadow-sm border border-gray-200/50 text-xs font-medium text-gray-800">
+              <span><strong><%= s.label %>:</strong> <%= s.value %></span>
+            </div>
+          <% }); %>
+        </div>
+        <% } %>
+
+        <div class="bg-gray-50 rounded-2xl p-5 border border-gray-100">
+          <strong class="block text-sm text-gray-900 mb-1">Hassle-free ownership</strong>
+          <p class="text-xs text-gray-500 leading-relaxed">Available at 120+ YADEA dealerships across Pakistan with 3S showrooms, genuine spare parts and certified technicians.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCRIPTION + SPECS -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-montserrat font-extrabold text-2xl md:text-3xl text-gray-900 mb-4">Overview</h2>
+      <div class="prose-yadea text-sm"><%= m.description %></div>
+
+      <% if (m.specs.length) { %>
+      <h2 class="font-montserrat font-extrabold text-2xl md:text-3xl text-gray-900 mt-10 mb-4">Specifications</h2>
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+        <table class="w-full text-sm">
+          <tbody>
+            <% m.specs.forEach(function (s, i) { %>
+              <tr class="<%= i % 2 === 0 ? 'bg-gray-50' : 'bg-white' %>">
+                <td class="px-5 py-3 text-gray-500 w-1/2"><%= s.label %></td>
+                <td class="px-5 py-3 font-semibold text-gray-900"><%= s.value %></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      </div>
+      <% } %>
+    </div>
+  </section>
+
+  <!-- RELATED -->
+  <% if (related.length) { %>
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-montserrat font-extrabold text-2xl md:text-3xl text-gray-900 mb-8">You may also like</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <% related.forEach(function (r) { %>
+          <%- include('partials/product-card', { m: r, redirect: '/cart' }) %>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- DEALERS -->
+  <% if (dealers.length) { %>
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-montserrat font-extrabold text-2xl md:text-3xl text-gray-900 mb-8">Available at dealers near you</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <% dealers.slice(0, 4).forEach(function (d) { %>
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 hover:shadow-md transition-shadow">
+            <span class="inline-block bg-brand-orange/10 text-brand-orange text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3"><%= d.city %></span>
+            <h3 class="font-montserrat font-bold text-base text-gray-900 mb-1"><%= d.name %></h3>
+            <p class="text-xs text-gray-500 mb-3 leading-relaxed"><%= d.address %></p>
+            <div class="flex items-center justify-between text-xs">
+              <a href="tel:<%= d.phone1 %>" class="text-brand-orange font-bold"><%= d.phone1 %></a>
+              <a href="/find-a-dealer" class="text-gray-400 hover:text-brand-orange font-semibold">Details</a>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/find-a-dealer" class="inline-block px-8 py-3 bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 font-semibold rounded-md text-xs uppercase tracking-wider transition-colors">View All Dealers</a>
+      </div>
+    </div>
+  </section>
+  <% } %>
+</main>
+
+<%- include('partials/footer') %>

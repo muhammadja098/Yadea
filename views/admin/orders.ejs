@@ -1,0 +1,37 @@
+<%- include('partials/head') %>
+
+<h2>Orders</h2>
+
+<div class="card" style="margin-top:18px">
+  <table>
+    <thead><tr><th>Reference</th><th>Customer</th><th>Items</th><th>Total</th><th>Payment</th><th>Address</th><th>Status</th></tr></thead>
+    <tbody>
+      <% orders.forEach(function (o) { %>
+        <tr>
+          <td><strong><%= o.reference %></strong><div class="muted" style="font-size:12px"><%= o.created_at %></div></td>
+          <td><%= o.customer_name %><div class="muted" style="font-size:12px"><%= o.phone %><%= o.email ? ' · '+o.email : '' %></div></td>
+          <td>
+            <% o.items.forEach(function (i) { %>
+              <div style="font-size:12.5px"><%= i.name %> × <%= i.qty %></div>
+            <% }); %>
+          </td>
+          <td><strong><%= money(o.total) %></strong></td>
+          <td><%= o.payment_method.toUpperCase() %></td>
+          <td class="muted" style="font-size:12.5px"><%= o.address %><br><%= o.city %></td>
+          <td>
+            <form class="inline-form" method="POST" action="/admin/orders/<%= o.id %>/status">
+              <select name="status" class="mini-select" onchange="this.form.submit()">
+                <% ['pending','confirmed','dispatched','delivered','cancelled'].forEach(function (s) { %>
+                  <option value="<%= s %>" <%= o.status === s ? 'selected' : '' %>><%= s %></option>
+                <% }); %>
+              </select>
+            </form>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <% if (!orders.length) { %><div class="empty">No orders yet.</div><% } %>
+</div>
+
+<%- include('partials/foot') %>

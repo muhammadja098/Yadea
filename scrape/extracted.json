@@ -1,0 +1,867 @@
+{
+  "models": [
+    {
+      "slug": "yadea-t5l",
+      "title": "Yadea T5L Product Landing Page",
+      "headings": [
+        "YADEA T5L",
+        "Family Rides, Miles of Smiles",
+        "Price",
+        "305,000 PKR",
+        "51km/h",
+        "80-100km",
+        "4-Years, 50,000km",
+        "Reliable for Frequent Riders",
+        "Commuting and Trips",
+        "Daily Storage",
+        "TTFAR Energy Retrieving System",
+        "Safe Stop with High Efficiency",
+        "High-capacity Lithium Iron Phosphate Battery",
+        "72V 30Ah"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/elementor/thumbs/1616x640-Bike-rtmwjvuvdazrpweksknga6s5gc2d79lw1kvjwioqcw.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery-capacity.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/charging-time.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/per-charge.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/technology.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/motor.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/tire.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/shield.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/Commuting.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/Daily-Stroage.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/Energy-TTFR.jpg"
+      ],
+      "text": "YADEA T5L\nFamily Rides, Miles of Smiles\nPrice\n305,000 PKR\nBook a Test Ride\nTop Speed\n51km/h\nRange\n80-100km\nBattery Warranty\n4-Years, 50,000km\nLithium Iron Phosphate Battery\n72V 30Ah Battery Capacity\n5.5hr Charging Time\n80-100km Per Charge\nTTFAR Technology\n2700W Peak Power Motor\n10” Tubeless Tires\n4years, 50,000km Warranty\nReliable for Frequent Riders\nCOMMUTING AND TRIPS\nDAILY STORAGE\nTTFAR ENERGY RETRIEVING SYSTEM\nFULL DISC BRAKE\nCOMMUTING AND TRIPS\nCommuting and Trips\n700 mm extended seat and 340 mm footrest space, sofa-like room for three.\nDAILY STORAGE\nDaily Storage\n26L underseat storage, easy storage for your necessary gear like a helmet, umbrella, or charger.\nTTFAR ENERGY RETRIEVING SYSTEM\nTTFAR Energy Retrieving System\nReal Energy-Saving controller, “charging” while riding, gives you a longer range. With a monitoring dashboard, you know everything about your ride.\nFULL DISC BRAKE\nSafe Stop with High Efficiency\nTogether with good-grip tubeless tires, it ensures no slip on wet days, no slide on slopes, no drift on sudden stops.\nHigh-capacity Lithium Iron Phosphate Battery\nLong Lifespan, Extended Warranty. Daily commutes are effortless to handle, no range anxiety, just smooth control.\n72V 30Ah\nBattery Capacity\n5.5hr\nCharging Time\n4years, 50,000km\nBattery Pack Replacement Warranty\nTTFAR 2700W Peak Power Motor\nStrong Climbing. Meet Every Need for Hills and Village. Beat the rush. Ride on your terms.\n1500W\nRated Power\n51km/h\nMax. Speed\n100Nm\nMax. Torque\n16°\nClimbing Angle\nSmart & Rider-Focused Design\nSPECIFICATIONS"
+    },
+    {
+      "slug": "yadea-keeness",
+      "title": "Keenes Product Landing Page",
+      "headings": [
+        "YADEA KEENESS",
+        "Youngster’s First Choice For Street E-Motorcycle",
+        "Price",
+        "1,400,000 PKR",
+        "100km/h",
+        "129km",
+        "24-Months, 20,000km",
+        "Street Dominance",
+        "Comfortable Ergonomics",
+        "17-inch Street Motorcycle Tires",
+        "Front Inverted Fork and Mount Shock Absorption",
+        "CBS Braking System",
+        "Dual Ternary Lithium Iron Phosphate Battery",
+        "72V 32Ah*2"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/04/767x703.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery-capacity.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/charging-time.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/per-charge.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/technology.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/motor.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/tire.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/shield.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/comfortable-ergonomics.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/17inch-tire.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/front-shock.jpg"
+      ],
+      "text": "YADEA KEENESS\nYoungster’s First Choice For Street E-Motorcycle\nPrice\n1,400,000 PKR\nBook a Test Ride\nTop Speed\n100km/h\nRange\n129km\nBattery Warranty\n24-Months, 20,000km\nTernary Lithium Iron Phosphate Battery\n72V 32Ah*2 Battery Capacity\n5-6hr Charging Time\n129km Per Charge\nTTFAR Technology\n11kW Mid Mounted Motor\n17” Tubeless Tires\n24 months, 20,000km Battery Warranty\nStreet Dominance\nCOMFORTABLE ERGONOMICS\n17-INCH STREET MOTORCYCLE TIRES\nFRONT INVERTED FORK AND MOUNT SHOCK ABSORPTION\nCBS BRAKING SYSTEM\nCOMFORTABLE ERGONOMICS\nComfortable Ergonomics\nGolden-triangular position between rider and vehicle to give you just-right support for arm and back extension, a refreshing and relaxing driving experience with Yadea Keeness.\n17-INCH STREET MOTORCYCLE TIRES\n17-inch Street Motorcycle Tires\nStronger cushioning, endurance, and puncture resistance with excellent handling at high speed and cornering make it easy to deal with tricky road conditions.\nFRONT INVERTED FORK AND MOUNT SHOCK ABSORPTION\nFront Inverted Fork and Mount Shock Absorption\nOftently adopted in high-performance motorcycles, Keeness has opted for a high-quality suspension combination: an inverted fork, designed to provide sufficient stiffness and precision, coupled with a mount shock absorption offer an excellent balance of comfort and handling on any road conditions.\nCBS BRAKING SYSTEM\nCBS Braking System\nThe front and rear braking systems come with CBS versions. Powerful and effective ground friction is enforced with CBS to shorten the braking distance, reduce the risk of head tilt and tail flick.\nDual Ternary Lithium Iron Phosphate Battery\nElectric e-motorcycle with dual lithium batteries, ultra-high energy density and removable for charging, make it a perfect choice for youngsters to light travel against low battery anxiety.\n72V 32Ah*2\nBattery Capacity\n129km\nRange\n24-Months, 20,000km\nBattery Pack Replacement Warranty\n11kW Mid-drive High Performance Motor\nYadea’s latest mid-mounted motor unlocks more power instantly than any other in the line-up. Giving you an insane power rush and maximum control.\n100km/h\nMax. Speed\n3s\n0-50km/h\n300Nm\nMax. Torque\n20°\nClimbing Angle\nIntelligent Battery Management System\nEquipped with an intelligent battery management system (BMS), which has 40 plus protection over the battery, largely improves its lifetime and security level.\nIPX7\nWaterproof\nBMS 40+\nSmart Protection"
+    },
+    {
+      "slug": "yadea-velax",
+      "title": "Yadea Velax Landing Page",
+      "headings": [
+        "YADEA VELAX",
+        "Smart Ride, Relaxed Trip",
+        "Price",
+        "444,000 PKR",
+        "65km/h",
+        "85km",
+        "(ECO Mode)",
+        "4-years, 50,000km",
+        "Relaxed Trip",
+        "Home Charging",
+        "Intelligent Energy Management Controller",
+        "Smarter Energy, Smoother Journeys.",
+        "72V 30Ah",
+        "6-7hr"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/03/767x703.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery-capacity.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/charging-time.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/per-charge.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/technology.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/motor.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/tire.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/shield.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/home-charging_.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/Group-1.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/1916x1055.jpg"
+      ],
+      "text": "YADEA VELAX\nSmart Ride, Relaxed Trip\nPrice\n444,000 PKR\nBook a Test Ride\nTop Speed\n65km/h\nRange\n85km\n(ECO Mode)\nBattery Warranty\n4-years, 50,000km\nLithium Iron Phosphate Battery\n72V 30Ah Battery Capacity\n6-7hr Charging Time\n85km Range (ECO Mode)\nTTFAR Technology\n3200W Peak Power Motor\n14” Tubeless Tires\n4-Years, 50,000km Warranty\nRelaxed Trip\nHOME CHARGING\nINTELLIGENT ENERGY MANAGEMENT CONTROLLER\nHOME CHARGING\nHome Charging\nNo need to wait in line to refuel with gasoline\nINTELLIGENT ENERGY MANAGEMENT CONTROLLER\nIntelligent Energy Management Controller\nOptimizes power usage in real-time with 2 riding modes\nExtends battery life by up to 20% for longer rides\nSmarter Energy, Smoother Journeys.\nTTFAR high-capacity Lithium Iron Phosphate battery - reliable range with a relaxed riding experience.\n72V 30Ah\nBattery Capacity\n6-7hr\nCharging Time\n4-years, 50,000km\nBattery Pack Replacement Warranty\nTTFAR 3200W Peak Power Motor\nConquer Slopes with Ease. Performance that adapts to every road.\nReal power, Seamless acceleration.\n2000W\nRated Power\n65km/h\nMax. Speed\n172Nm\nMax. Torque\n15°\nClimbing Angle\nEasyGO\nSmart, Convenient, Relaxed Unlocking\nECO Drive\nEco-friendly and Energy-efficient Riding\nSPECIFICATIONS"
+    },
+    {
+      "slug": "yadea-m3h",
+      "title": "Yadea M3H Product Landing Page",
+      "headings": [
+        "YADEA M3H",
+        "Smooth Riding, Limitless Joy",
+        "Price",
+        "255,000 PKR",
+        "45km/hr",
+        "4-Years, 50,000km",
+        "Ergonomic Design",
+        "Stylish and Smooth, Elegance in Motion",
+        "Sleek Engineering",
+        "10-inch tires with high grip.",
+        "Front and rear hydraulic suspension",
+        "Removable Lithium Iron Phosphate Battery",
+        "60V 30Ah",
+        "5hr"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/elementor/thumbs/767x703-rtmwjvuvdazrpweksknga6s5gc2d79lw1kvjwioqcw.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery-capacity.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/charging-time.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/per-charge.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/technology.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/motor.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/tire.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/shield.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/elegancde-in-motion.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/sleek-engineering.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/05/tire.jpg"
+      ],
+      "text": "YADEA M3H\nSmooth Riding, Limitless Joy\nPrice\n255,000 PKR\nBook a Test Ride\nTop Speed\n45km/hr\nRange\n110 km\n(Eco Mode)\n70 km\n(Sports Mode)\nBattery Warranty\n4-Years, 50,000km\nLithium Iron Phosphate Battery\n60V 30Ah Battery Capacity\n5hr Charging Time\n70-110km Range\nTTFAR Technology\n2200W Peak Power Motor\n10” Tubeless Tires\n4-Years, 50,000km Warranty\nErgonomic Design\nElegance in Motion\nSleek Engineering\nHigh Grip Tires\nHydraulic Suspension\nElegance in Motion\nStylish and Smooth, Elegance in Motion\nThe M3-H features an elegant and stylish design, with smooth, flowing lines, offering a light and comfortable ride for women\nSleek Engineering\nSleek Engineering\nEvery detail has been carefully considered to ensure a pleasant and effortless travel experience.\nHigh Grip Tires\n10-inch tires with high grip.\nEffective slip resistance and puncture prevention.\nHydraulic Suspension\nFront and rear hydraulic suspension\nAccurately filters out the impacts of road irregularities.\nRemovable Lithium Iron Phosphate Battery\nThe battery offers high energy density, ensuring stable discharge and recharge\n60V 30Ah\nBattery Capacity\n5hr\nCharging Time\n4years, 50,000km\nBattery Pack Replacement Warranty\nTTFAR 2200W Peak Power Motor\nThe M3-H is equipped with an engine developed by Yadea itself. Even carrying two people, the M3-H climbs hills with ease and handles various challenging road conditions\n1200W\nRated Power\n45km/hr\nMax. Speed\n117 Nm\nMax. Torque\n13°\nClimbing Angle\nSPECIFICATIONS"
+    },
+    {
+      "slug": "yadea-ruibin-s",
+      "title": "Yadea Ruibin S",
+      "headings": [
+        "YADEA RUIBIN SPORTS",
+        "Electrify Your Life",
+        "Price",
+        "193,000 PKR",
+        "50km/h",
+        "80km",
+        "24 Months, 20,000km",
+        "Engineered for Safety, Designed for Convenience",
+        "Reverse Gear Function",
+        "Traction Control System",
+        "Hill Descent Control",
+        "Smart App Connectivity",
+        "TTFAR Graphene Battery Technology",
+        "72V 25Ah"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/06/767x703.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/battery-capacity.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/accessories.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/per-charge.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/technology.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/motor.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/tire.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/04/shield.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/Reverse.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/correction_.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/hill.jpg"
+      ],
+      "text": "YADEA RUIBIN SPORTS\nElectrify Your Life\nPrice\n193,000 PKR\nBook a Test Ride\nTop Speed\n50km/h\nRange\n80km\nBattery Warranty\n24 Months, 20,000km\nGraphene Battery\n72V 25Ah Battery Capacity\nBack Rest/Guard Bar Accessories\n80km Range\nTTFAR Technology\n2000W Peak Power Motor\n10” Tubeless Tires\n24 Months, 20,000km Battery Warranty\nEngineered for Safety, Designed for Convenience\nReverse Gear Function\nTraction Control System\nHill Descent Control\nSmart App Connectivity\nReverse Gear Function\nReverse Gear Function\nReverse gear makes it easy to reverse out of tight parking spaces. It's effortless for women to use, with a simple one-button reverse function.\nTraction Control System\nTraction Control System\nTCS prevents slipping in the rain; powerful front and rear disc brakes provide stable steering and braking. Ride safely in the rain, no more skidding.\nHill Descent Control\nHill Descent Control\nHDC driver assistance system maint ains steady speed on slopes. It gives enhanced braking control for safer downhill rides.\nSmart App Connectivity\nSmart App Connectivity\nSmart large-screen instrument panel connects to a Bluetooth app for proximity unlocking and displays the time of arrival, making intelligent vehicle control more convenient. Equipped with smart features, including family account sharing, electronic seat lock, sound control\nTTFAR Graphene Battery Technology\nPowered by an advanced graphene battery, which provides dependable performance, extended range, and lasting reliability, making every ride smoother, smarter, and more efficient.\n72V 25Ah\nBattery Capacity\n6-7hr\nCharging Time\n24 Months, 20,000km\nBattery Pack Replacement Warranty\nTTFAR 2000W Peak Power Motor\nThe powerful electric motor combines efficiency with responsive torque, ensuring smooth starts, reliable power delivery, and a comfortable ride through busy city streets.\n1000W\nRated Power\n50km/h\nMax. Speed\n80Nm\nMax. Torque\n9°\nClimbing Angle\nProduct Gallery\nSPECIFICATIONS"
+    },
+    {
+      "slug": "yadea-gt30",
+      "title": "Yadea GT30",
+      "headings": [
+        "Unlock Your Electric Adventure with GT30",
+        "TRAVEL FAR WITH YADEA",
+        "BEGIN YOUR ENDLESS ADVENTURE",
+        "UNLEASH THE POWER OF HIGH-RESOLUTION LED",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2025/06/GT30-8-removebg-preview-e1754223477625.png",
+        "https://yadea.com.pk/wp-content/uploads/2025/06/GT30-10-removebg-preview-1-e1750960067455.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2025/06/GT30-12-removebg-preview.png",
+        "https://yadea.com.pk/wp-content/uploads/2025/06/GT30-3-removebg-preview.png"
+      ],
+      "text": "Unlock Your Electric Adventure with GT30\nFusion of performance, style, and sustainability\nBuy Now\nTest Drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea GT30, featuring a robust 60V 23 Ah Graphene Battery, delivering three times the longevity for a worry-free journey. With the 1000W GTR 5.0 High Efficiency Motor, enjoy a powerful and efficient ride. Stay in control with the intelligent smart dashboard, keeping you informed about your battery life and ensuring you're always ready for the road ahead.\nBEGIN YOUR ENDLESS ADVENTURE\nBoasting an impressive 70-75 km range on a single charge and a top speed of 45 km/hr, you can effortlessly navigate the city without the concern of recharging. Yadea GT30 delivers you the ideal combination of range and speed for every journey.\nSpeed\n45 Km/Hr.\nModel\nYadea GT30\nTechnology\nTTFAR\nper charge\n75 KM\ncharge time\n6-8 hours\nbattery type\n60V 23 Ah Graphene Battery\nUNLEASH THE POWER OF HIGH-RESOLUTION LED\nThe expansive LED screen offers real-time insights into your remaining battery power, keeping you informed at all times. Coupled with an intelligent dashboard that adjusts brightness based on your surroundings, enjoy a riding experience that seamlessly adapts to your journey, ensuring both control and comfort\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea GT30. Boasting an efficient braking system and tubeless tires with alloy rims, it ensures a secure ride every time. Elevate your comfort with cushioned seats, promising a journey as smooth as it is safe. Trust Yadea GT30 for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 60V 23 Ah Graphene Battery\nTechnology TTFAR\nRange 75 Km/Hr. on single charge\nMax Speed 45 Km/Hr\nCharge Time 6-8 hours\nRated Power 1000 W\nDIMENSIONS\nLength*width*height-wheel base 1175x675x1130-1250mm\nGround Clearance 101.6 mm\nSpan Length 330 mm\nTorque 40N.m\nGradeability/Climbing Capacity 14 degree\nMax Load 150 KG\nCOLORS\nBlack, Emerland Green\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "yadea-epoch-top-electric-scooter-in-pakistan-for-daily-commutes",
+      "title": "Yadea EPOCH Top Electric Scooter in Pakistan for Daily Commutes",
+      "headings": [
+        "How beneficial is it for you?",
+        "Your Ride, Your Buddy",
+        "E-scooter bike",
+        "Electric Motorcycle Scooter Features",
+        "Battery Scooty in Pakistan",
+        "Eco-Friendly Scooty Advantages",
+        "E-Bike in Pakistan Growth",
+        "Compatible Prices of E-bikes",
+        "Choosing the Best Scooty in Pakistan",
+        "Final Words"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2024/10/Picture56.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/10/YadeaBlack.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/10/13-2-1-768x581.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/10/YadeaBlack-600x433.png"
+      ],
+      "text": "Electric bikes in Pakistan have revolutionised the way that people commute. With the increasing traffic congestion and fuel costs, more riders are looking into electric alternatives that can be eco-friendly and economical. In this category, the Yadea EPOCH is a standout in everyday use.\nThe electric scooter combines sleek design, durable performance, and innovative features to make urban travel easier. As more and more people move towards environmentally friendly transportation and a more sustainable lifestyle, the EPOCH is becoming a popular option for riders who seek convenience, efficiency, and style.\nHow beneficial is it for you?\nMaking the switch to an electric scooter isn't only about saving fuel but also about embracing the latest technology and convenience. Yadea EPOCH offers smooth rides and little maintenance, as well as speedy charging at home.\nBattery 72V 38 Ah Graphene Battery\nTechnology Yadea Motor\nRange 125 Km/Hr. on a single charge\nMax Speed 70 Km/Hr.\nCharge Time 7-8 hours\nRated Power 2000 W and 3200W Peak Power\nPeople who commute daily in bustling cities understand that cities need more peaceful and noise-free rides. It's an upgrade to traditional two-wheelers that offer functionality and a beneficial environmental impact.\nYour Ride, Your Buddy\nEPOH is an unbeatable ride that is highly user-friendly and comfortable. The style and elegance it delivers when you are out on the street is unbeatable. After seeing its high performance and battery timing, one would think it would be heavy, but on the contrary, it's lightweight, stable, and makes your glide through traffic easier than ever.\nYour buddy ride’s efficiency can cut down on overall commute time and provide a relaxing and stress-free method of moving about. Due to their eco-friendly nature, they are quickly growing in popularity among urban inhabitants.\nE-scooter bike\nMost of the crowd is wondering what an e-scooter bike is. Is it a bike or a scooter? What is this new terminology? Well, our vehicles are designed to give the sleekness of bikes, the stability of a scooter, and the efficiency of an e-bike. This is why it has the hybrid name EPOCH Scooter E-bike , as it offers the best of both worlds; it needs less storage space, has lower operating costs, and a stylish and sleek design. The EPOCH is a hybrid of the speed and agility of a scooter and the convenience of a commuter bike, which makes it a very versatile option.\nElectric Motorcycle Scooter Features\nElectric motorcycle scooters are engineered to provide performance and convenience, and the EPOCH is no different.\nBattery Technology TTFAR graphene\nMaximum load capacity 140 kg\nRated motor power 2000 W\nMotor Type Wheel hub\nTubular frame\nTire type Front: 3.00-10, Rear: 3.00-10\nRear brakes Drums\nFront brakes Disk\nConnectivity Bluetooth app connectivity\nPeak Torque 150N.m\nBasic Configuration\nHydraulic rear and front shock absorbers\nFront  and rear Turn Signal\nColors SkyGrey/SolowGrey/Black\nUSB connector\nAlloy wheels\nTogether, these features provide a stable everyday ride that's ready to go for short trips to the store or regular commutes to work.\nBattery Scooty in Pakistan\nA battery scooter in Pakistan needs to be equipped with qualities that can endure the situation. EPOCH provides cutting-edge battery technology that can survive the heat of summer and the cold winter nights. It is easy to charge it by plugging it into an office or home socket. Its durability and efficiency make it ideal for frequent riders looking for an effective companion for their daily commutes. For commuters in urban areas, this is a reliable battery that is low-maintenance.\nEco-Friendly Scooty Advantages\nA scooty that is eco-friendly, like the Yadea EPOCH, does more than just save costs; it also protects the environment.\nNo emissions\nQuiet and cute commute\nGreener cities\nFashionable choice\nE-Bike in Pakistan Growth\nThe demand for electric bikes in Pakistan has increased dramatically in 2025. Daily commute and public transport routes dont fit into everyone's schedule, and then one recognizes that in the hustling traffic of Lahore or Islamabad, you need something sleek and quiet that just glides by and takes you where you want with complete freedom and great performance.\nWhatever your plan for the day,\nLeisure outings\nYour daily 9-5 job commute\nSlow and steady errands\nWith its long range and great speed, you can rely on us for anything.\nBook a test drive now and buy the ride of the future!\nCompatible Prices of E-bikes\nEPOCH falls within a competitive price range. With its innovative features and design, and the long-term savings it offers, it provides great value for the price. Although the initial cost may appear greater than that of standard scooters, the operational savings and the international standards on which it is built will surprise you. And it will soon compensate for the cost. With no fuel expenses and a minimal need for servicing, riders find the EPOCH to be a good value in the long run.\nChoosing the Best Scooty in Pakistan\nThe best scooter for Pakistan requires a balance between performance, comfort, and value. Our EPOCH ticks all these boxes,\nAffordable daily commute\nIt's sleek\nLoaded with unique features\nReputed and reliable company with international presence\nIf you're looking for a more sustainable alternative to petrol bikes but without sacrificing quality, EPOCH is the best choice. EPOCH is an option worth looking into."
+    },
+    {
+      "slug": "yadea-epoc-h",
+      "title": "Yadea Epoc H",
+      "headings": [
+        "ELECTRIFY YOUR LIFE WITH EPOC H",
+        "TRAVEL FAR WITH YADEA EPOC-H",
+        "EMBARK ON ENDLESS ADVENTURES",
+        "charge time",
+        "HIGH RESOLUTION LED SCREEN",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2024/10/YadeaBlack.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/12/Yadea-Scooter-5.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/10/Epoc-H-Standing-600x990.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/10/Picture56.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/20210714103239_99063328d8-1024x514.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/pic_2_433b82c9b7-1024x514.png"
+      ],
+      "text": "ELECTRIFY YOUR LIFE WITH EPOC H\nRedefine Trendy Look\nBuy Now\nTest drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA EPOC-H\nEPOC, a luxury e-scooter that is well-designed for city commuting, is upgraded in power, handling, and quality thanks to Yadea's rich experience in product iteration. Built with precision and elegance, EPOC combines sleek aesthetics with cutting-edge technology, offering a smooth, quiet, and efficient ride. The enhanced battery system ensures longer travel distances, while advanced safety features provide peace of mind in busy urban environments. With intuitive controls, ergonomic design, and premium materials, EPOC isn’t just a ride—it’s a statement of modern urban mobility.\nEMBARK ON ENDLESS ADVENTURES\nUnleash the freedom of extended city rides with the Yadea EPOC-H. With an impressive range 125 km on a single charge and a max speed of 70km/hr, you can explore the cityscape without worrying about recharging. Elevate your urban adventures with the Yadea EPOC-H efficient and powerful performance, offering the perfect blend of range and speed for your every journey.\nSpeed\n70 Km/Hr.\nModel\nYadea EPOC-H\nTechnology\nttfar\nper charge\n125 KM\ncharge time\n7-8 hours\nbattery type\n72V 38 Ah Graphene Battery\nHIGH RESOLUTION LED SCREEN\nStay in control with the Yadea EPOC-H cutting-edge features. The large LED screen provides real-time visibility into your remaining battery power, ensuring you're always informed. Plus, the intelligent dashboard automatically adjusts brightness according to your surroundings, guaranteeing a seamless and adaptable riding experience\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea EPOC-H. Cruise Control: Effortless speed management for a smooth ride.App Control: Lock, unlock, start, and stop via Bluetooth! Side Stand Sensor: Enhanced safety with automatic alerts Elevate your comfort with cushioned seats upto 630mm and Pedal Space 380mm\n, promising a journey as smooth as it is safe. Trust Yadea EPOC-H for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 72V 38 Ah Graphene Battery\nTechnology Yadea Motor\nRange 125 Km/Hr. on single charge\nMax Speed 70 Km/Hr.\nCharge Time 7-8 hours\nRated Power 2000 W and 3200W Peak Power\nTECHNICAL DETAILS\nLength*width*height-wheel base 1860x775x1180-1300 mm\nGround Clearance 120 mm\nSpan Length 340 mm\nTorque 150N.m\nGradeability/Climbing Capacity 16 degree\nMax Load 150 KG\nCOLORS\nSky Gray, Black, Solow Gray\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "yadea-g5",
+      "title": "Yadea G5",
+      "headings": [
+        "ELECTRIFY YOUR LIFE\nWITH G5",
+        "TRAVEL FAR WITH YADEA",
+        "EMBARK ON ENDLESS ADVENTURES",
+        "charge time",
+        "HIGH RESOLUTION LED SCREEN",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2024/02/yadea-G5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/11-1024x1024.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/g5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/bj_7_848ae5958a-1024x401.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/AKSK_oss_csv_7e587ce3ac-1024x514.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/20210714103239_99063328d8-1024x514.png"
+      ],
+      "text": "ELECTRIFY YOUR LIFE\nWITH G5\nRide the electric revolution\nTest Drive\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea G5, featuring a robust 72V 26 Ah Graphene Battery, delivering three times the longevity for a worry-free journey. With Upto 90% High Efficiency Motor, enjoy a powerful and efficient ride. Stay in control with the Energy Monitoring Digital Dashboard, keeping you informed about your battery life and ensuring you're always ready for the road ahead.\nEMBARK ON ENDLESS ADVENTURES\nUnleash the freedom of extended city rides with the Yadea G5. With an impressive range 90-100 km on a single charge and a max speed of 55 km/hr, you can explore the cityscape without worrying about recharging. Elevate your urban adventures with the Yadea G5's efficient and powerful performance, offering the perfect blend of range and speed for your every journey.\nSpeed\n50 Km/Hr.\nModel\nYadea G5\nTechnology\nttfar\nper charge\n90-100 KM\ncharge time\n5-6 hours\nbattery type\n72V 26 Ah Graphene Battery\nHIGH RESOLUTION LED SCREEN\nStay in control with the Yadea G5's cutting-edge features. The large LED screen provides real-time visibility into your remaining battery power, ensuring you're always informed. Plus, the intelligent dashboard automatically adjusts brightness according to your surroundings, guaranteeing a seamless and adaptable riding experience\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea G5. Boasting an efficient braking system with front and rear Disc Brakes and 12 inch Alloy Wheel with anti-skid and rolling resistant tubeless tires, it ensures a secure ride every time. Elevate your comfort with cushioned seats upto 700mm, promising a journey as smooth as it is safe. Trust Yadea G5 for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery\n72V 26 Ah Graphene Battery\nTechnology\nYadea Motor\nRange\n90-100 Km/Hr. on single charge\nMax Speed\n50 Km/Hr.\nCharge Time\n5-6 hours\nRated Power\n1200 W and 2400W Peak Power\nTECHNICAL DETAILS\nLength*width*height-wheel base\n1810x700x1095mm\nGround Clearance\n120 mm\nSpan Length\n340 mm\nTorque\n85N.m\nGradeability/Climbing Capacity\n12 degree\nMax Load\n150 KG\nCOLORS\nGray, Red, Silver\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "yadea-m3",
+      "title": "Yadea M3",
+      "headings": [
+        "ELECTRIFY YOUR LIFE\nWITH M3",
+        "TRAVEL FAR WITH YADEA",
+        "EMBARK ON ENDLESS ADVENTURES",
+        "charge time",
+        "HIGH RESOLUTION LED SCREEN",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/06/500x500.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/1080x1080.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/yadea-m3-centered-img.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/1.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/2.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/06/3.jpg"
+      ],
+      "text": "ELECTRIFY YOUR LIFE\nWITH M3\nEnjoy the New Fashion of Urban Riding.\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea M3, featuring a robust 60V 23 Ah Graphene Battery, delivering three times the longevity for a worry-free journey. With Upto 90% High Efficiency Motor, enjoy a powerful and efficient ride. Stay in control with the Energy Monitoring Digital Dashboard, keeping you informed about your battery life and ensuring you're always ready for the road ahead.\nEMBARK ON ENDLESS ADVENTURES\nUnleash the freedom of extended city rides with the Yadea M3. With an impressive range 80 km on a single charge and a max speed of 42 km/hr, you can explore the cityscape without worrying about recharging. Elevate your urban adventures with the Yadea M3's efficient and powerful performance, offering the perfect blend of range and speed for your every journey.\nSpeed\n42 Km/Hr.\nModel\nYadea M3\nTechnology\nGRAPHENE\nper charge\n80 KM\ncharge time\n6-8 hours\nbattery type\n60V 23 Ah Graphene Battery\nHIGH RESOLUTION LED SCREEN\nStay in control with the Yadea M3's cutting-edge features. The large LED screen provides real-time visibility into your remaining battery power, ensuring you're always informed. Plus, the intelligent dashboard automatically adjusts brightness according to your surroundings, guaranteeing a seamless and adaptable riding experience\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea M3. Boasting an efficient braking system with front and rear Disc Brakes and 12 inch Alloy Wheel with anti-skid and rolling resistant tubeless tires, it ensures a secure ride every time. Elevate your comfort with cushioned seats upto 700mm, promising a journey as smooth as it is safe. Trust Yadea M3 for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 60V 23 Ah Graphene Battery\nTechnology Yadea Motor\nRange 80 Km/Hr. on single charge\nMax Speed 42 Km/Hr.\nCharge Time 6-8 hours\nRated Power 1200 W and 2400W Peak Power\nTECHNICAL DETAILS\nLength*width*height-wheel base 1730x710x1060-1190mm\nGround Clearance 120 mm\nSpan Length 340 mm\nTorque 85N.m\nGradeability/Climbing Capacity 12 degree\nMax Load 150 KG\nCOLORS\nBlue\nRed\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "ruibin-l",
+      "title": "Ruibin L",
+      "headings": [
+        "Unlock Your Electric Adventure with Ruibin L",
+        "TRAVEL FAR WITH YADEA",
+        "BEGIN YOUR ENDLESS ADVENTURE",
+        "UNLEASH THE POWER OF HIGH-RESOLUTION LED",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-伊顿蓝-左180-1024x640.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-索罗灰-左180.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-电光艳红-正面-1024x640.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-伊顿蓝-左180-1-768x480.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-电光艳红-左180-768x480.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-索罗灰-左180-1-768x480.png"
+      ],
+      "text": "Unlock Your Electric Adventure with Ruibin L\nFusion of performance, style, and sustainability\nBuy Now\nTest Drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea Ruibin L, featuring a robust 72V 50 Ah LFP Battery, delivering three times the longevity for a worry-free journey. With the 2000W GTR 5.0 High Efficiency Motor, enjoy a powerful and efficient ride. Stay in control with the intelligent smart dashboard, keeping you informed about your battery life and ensuring you're always ready for the road ahead.\nBEGIN YOUR ENDLESS ADVENTURE\nBoasting an impressive 90-100 km range on a single charge and a top speed of 55 km/hr, you can effortlessly navigate the city without the concern of recharging. Yadea Ruibin L delivers you the ideal combination of range and speed for every journey.\nTop Speed\n55 Km/Hr.\nModel\nYadea Ruibin L\nTechnology\nTTFAR\nper charge\n90/100 KM\ncharge time\n5-6 hours\nbattery type\n72V 30 Ah High Capacity Battery\nUNLEASH THE POWER OF HIGH-RESOLUTION LED\nThe expansive LED screen offers real-time insights into your remaining battery power, keeping you informed at all times. Coupled with an intelligent dashboard that adjusts brightness based on your surroundings, enjoy a riding experience that seamlessly adapts to your journey, ensuring both control and comfort\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea Ruibin L. Boasting an efficient braking system and tubeless tires with alloy rims, it ensures a secure ride every time. Elevate your comfort with cushioned seats, promising a journey as smooth as it is safe. Trust Yadea Ruibin L for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 72V 30 Ah High Capacity Battery\nTechnology GTR 5.0\nRange 90/100 Km/Hr. on single charge\nMax Speed 60 Km/Hr\nCharge Time 5-6 hours\nRated Power 1000 W\nDIMENSIONS\nLength*width*height-wheel base\n1720x660x1100mm\nGround Clearance\n130 mm\nSpan Length\n360 mm\nGradeability/Climbing Capacity\n14 degree\nMax Load\n93 KG\nCOLORS\nRED\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "gt-70",
+      "title": "GT 70",
+      "headings": [
+        "Unlock Your Electric Adventure with GT 70",
+        "TRAVEL FAR WITH YADEA",
+        "BEGIN YOUR ENDLESS ADVENTURE",
+        "UNLEASH THE POWER OF HIGH-RESOLUTION LED",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/10/GT70-左45-繁星黑-1024x640.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/GT70-左180-繁星黑.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/GT70-左45-繁星黑-1.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/GT70-左180-繁星黑-1-768x501.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/10/GT70-左45-繁星黑-1-768x480.png"
+      ],
+      "text": "Unlock Your Electric Adventure with GT 70\nFusion of performance, style, and sustainability\nBuy Now\nTest Drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea GT 70, featuring a robust 72V 50 Ah LFP Battery, delivering three times the longevity for a worry-free journey. With the 2000W TTFAR High Efficiency Motor, enjoy a powerful and efficient ride. Stay in control with the intelligent smart dashboard, keeping you informed about your battery life and ensuring you're always ready for the road ahead.\nBEGIN YOUR ENDLESS ADVENTURE\nBoasting an impressive 90-100 km range on a single charge and a top speed of 60 km/hr, you can effortlessly navigate the city without the concern of recharging. Yadea Ruibin L delivers you the ideal combination of range and speed for every journey.\nTop Speed\n65 Km/Hr.\nModel\nYadea GT 70\nTechnology\nTTFAR\nper charge\n110/170 KM\ncharge time\n8 hours\nbattery type\n72V 50 Ah High Capacity Battery\nUNLEASH THE POWER OF HIGH-RESOLUTION LED\nThe expansive LED screen offers real-time insights into your remaining battery power, keeping you informed at all times. Coupled with an intelligent dashboard that adjusts brightness based on your surroundings, enjoy a riding experience that seamlessly adapts to your journey, ensuring both control and comfort\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea GT 70. Boasting an efficient braking system and tubeless tires with alloy rims, it ensures a secure ride every time. Elevate your comfort with cushioned seats, promising a journey as smooth as it is safe. Trust Yadea GT 70 for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 72V 50 Ah High Capacity Battery\nTechnology TTFAR Techology\nRange 110/170 Km/Hr. on single charge\nMax Speed 60 Km/Hr\nCharge Time 8 hours\nRated Power 2000 W\nDIMENSIONS\nLength*width*height-wheel base\n2080x715x1175-1370mm\nGround Clearance\n150 mm\nSpan Length\n360 mm\nGradeability/Climbing Capacity\n14 degree\nMax Load\n93 KG\nCOLORS\nStarry Black & Turbo Orange\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "yadea-ruibin-l",
+      "title": "Yadea Ruibin L",
+      "headings": [
+        "Unlock Comfort and Safety on Every Ride with Ruibin L",
+        "Commute Effortlessly with Yadea Ruibin L",
+        "Begin your effortless urban commute",
+        "UNLEASH THE POWER OF HIGH-RESOLUTION LED",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/09/RUIBIN-L-电光艳红-45-scaled.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/09/RUIBIN-L-伊顿蓝-左45-scaled.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/03/r-2.png"
+      ],
+      "text": "Unlock Comfort and Safety on Every Ride with Ruibin L\nFusion of Smart Safety, Effortless Comfort, and Sustainable Energy\nTest Drive\nBuy Now\nTest Drive\nCommute Effortlessly with Yadea Ruibin L\nEmpower your rides with the Yadea Ruibin L, featuring a long-life 72V 30Ah LFP Battery that delivers up to 110km of range for a worry-free journey. With the 1000W High Performance Motor, enjoy a powerful, smooth, and efficient ride. Stay in control with the intelligent smart dashboard and app connectivity, keeping you informed about your battery health and ensuring you're always ready for the road ahead.\nBegin your effortless urban commute\nBoasting an impressive 90-110 km range on a single charge and a top speed of 45-50 km/hr, you can effortlessly navigate the city without the concern of recharging. Yadea Ruibin L delivers you the ideal combination of range and speed for every journey.\nSpeed\n45 to 50 Km/Hr.\nModel\nYadea Ruibin l\nTechnology\nTCS & HDC DRIVER ASSISTANCE\nper charge\n90-110 KM\ncharge time\n5 hours\nbattery type\n72V 30 AH LFP BATTERY\nUNLEASH THE POWER OF HIGH-RESOLUTION LED\nThe expansive LED screen offers real-time insights into your remaining battery power, keeping you informed at all times. Coupled with an intelligent dashboard that adjusts brightness based on your surroundings, enjoy a riding experience that seamlessly adapts to your journey, ensuring both control and comfort\nCOMFORTABLE, RELIABLE & CONVENIENT\nExperience the epitome of safety and reliability with the Yadea Ruibin. Boasting an efficient braking system and tubeless tires with alloy rims, it ensures a secure ride every time. Elevate your comfort with cushioned seats, promising a journey as smooth as it is safe. Trust Yadea Ruibin for a ride that seamlessly blends safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery\n72V 26 Ah Graphene Battery\nTechnology\nGTR 5.0\nRange\n80-90 Km/Hr. on single charge\nMax Speed\n45 Km/Hr\nCharge Time\n5-6 hours\nRated Power\n800 W\nDIMENSIONS\nLength*width*height-wheel base\n1725x635x1100mm\nGround Clearance\n120 mm\nSpan Length\n330 mm\nTorque\n80N.m\nGradeability/Climbing Capacity\n9 degree\nMax Load\n150 KG\nCOLORS\nGray, Blue\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    },
+    {
+      "slug": "yadea-gt70-cyber",
+      "title": "Yadea GT70 Cyber",
+      "headings": [
+        "Unlock Your Electric Adventure with YADEA GT70 Cyber",
+        "TRAVEL FAR WITH YADEA",
+        "BEGIN YOUR ENDLESS ADVENTURE",
+        "UNLEASH THE POWER OF CYBER-PUNK HIGH-RESOLUTION LED",
+        "ULTRA-COMFORTABLE, ULTRA-RELIABLE & HIGHLY CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/08/GT70_Cyber-removebg-preview.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/08/download-1-1024x640.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/09/GT70-左45-繁星黑-1-scaled.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/08/download-1-1.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/09/GT70-左180-繁星黑-2048x1335.png"
+      ],
+      "text": "Unlock Your Electric Adventure with YADEA GT70 Cyber\nA Perfect Fusion of Performance, Style, and Sustainability\nTest Drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your rides with the Yadea GT70 Cyber, featuring a robust 72V 50Ah Lithium Iron Phosphate (LFP) Battery, delivering exceptional longevity and ultra-safe thermal management for a worry-free journey. With the 2000W High-Torque Motor, enjoy an incredibly powerful, smooth, and high-efficiency ride. Stay in control with the intelligent smart dashboard and keyless anti-theft system, keeping you fully informed about your battery life and ensuring you're always ready for the road ahead.\nBEGIN YOUR ENDLESS ADVENTURE\nBoasting an impressive 110-170 km range on a single charge and a top speed of 65 km/hr, you can effortlessly navigate the city without the concern of recharging. Yadea GT70 Cyber delivers you the ideal combination of premium range and high-torque speed for every journey.\nSpeed\n65 Km/Hr.\nModel\nYadea GT70 Cyber\nTechnology\nTTFAR\nper charge\n110-170 KM\ncharge time\naround 8 hours\nbattery type\n72V 50Ah LFP Battery (Supports Optional 72V 30Ah Dual Setup)\nUNLEASH THE POWER OF CYBER-PUNK HIGH-RESOLUTION LED\nThe expansive high-resolution TFT screen offers real-time insights into your remaining battery power and live riding telemetry, keeping you informed at all times. Coupled with an intelligent smart dashboard that features built-in navigation and smartphone app ecosystem connectivity, enjoy a riding experience that seamlessly adapts to your journey, ensuring both total control and maxi-scooter comfort.\nULTRA-COMFORTABLE, ULTRA-RELIABLE & HIGHLY CONVENIENT\nExperience premium safety and rugged reliability with the Yadea GT70 Cyber. Boasting a heavy dual disc braking system paired with smart Traction Control (TCS) and sporty tubeless tires on alloy rims, it ensures a skid-free ride every time. Elevate comfort with an ergonomic dual-texture seat and a protective exoskeleton frame, promising a journey as smooth as it is structurally secure and ultra-elite.\nSPECIFICATIONS\nBattery 72V 50Ah LFP(Lithium Iron Phosphate)  Battery (Supports Optional 72V 30Ah Dual Setup)\nTechnology TTFAR Technology\nRange 110–170 Km on single charge\nMax Speed 65 Km/Hr\nCharge Time Around 8 Hours\nRated Power 2000 W\nDIMENSIONS\nLength*width*height-wheel base 2080x713x1175mm\nGround Clearance 148 mm\nSpan Length 400 mm\nTorque 130N.m\nGradeability/Climbing Capacity 14° to 16° ramp angle\nTotal Weight(Empty Vehicle)\n93 KG\nCOLORS\nStarry Black & Turbo Orange\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nSaves Fuel & Cleans Cities: Eliminates the dependency on fossil fuels, cutting down daily commuting costs while paving the way for cleaner, smoke-free air in local cities.\nBeats Urban Congestion: Glides effortlessly through heavy city traffic with nimble maxi-scooter handling, transforming stressful daily traffic runs into smooth, happy journeys.\nEco-Friendly Dominance: Delivers a sustainable green ride with zero tailpipe emissions, ultra-quiet operations (no noise pollution), and highly cost-effective energy consumption."
+    },
+    {
+      "slug": "yadea-t5l-electric-scooter-e-bike",
+      "title": "Yadea T5L",
+      "headings": [
+        "Smarter Power Longer Rides",
+        "GO FURTHER WITH YADEA",
+        "POWER THAT TAKES YOU AHEAD",
+        "SMART CONNECTIVITY & CONTROL",
+        "COMFORTABLE, SAFE & SECURE"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2026/01/lp-bnr-t5l.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/01/1024x1024.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2026/01/197x499.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/01/2-1-1024x683.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/01/6-1-1024x683.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2026/01/5-1024x683.jpg"
+      ],
+      "text": "Smarter Power Longer Rides\nT5L Leads the Way\nBuy Now\nTest Drive\nBuy Now\nTest Drive\nGO FURTHER WITH YADEA\nEmpower your everyday commute with the Yadea T5L, a smart and advanced electric scooter engineered for modern city life. Equipped with a high-capacity 72V 30Ah Lithium Iron Phosphate (LFP) battery, the T5L delivers stable power output, enhanced safety, and long-term durability. Offering an impressive real-world range of 80–140 km on a single charge, the T5L is designed for extended daily travel with fewer charging interruptions. Whether you’re navigating busy city roads or cruising through quieter streets, the T5L ensures a smooth, efficient, and dependable riding experience. Built with intelligent technology and a durable frame, it strikes the ideal balance between performance, reliability, and everyday practicality.\nPOWER THAT TAKES YOU AHEAD\nWith a powerful 1500W TTFAR wheel hub motor, the Yadea T5L delivers smooth acceleration and strong pulling power for urban riding. Producing up to 100 Nm of peak torque and a maximum speed of 51 km/h, it allows riders to move confidently through traffic without compromising efficiency.\nSpeed\n51 Km/Hr.\nModel\nYadea T5L\nTechnology\nttfar\nper charge\n80-140 KM\ncharge time\n5.5 hours\nbattery type\n72V 30Ah Lithium Iron Phosphate\nSMART CONNECTIVITY & CONTROL\nThe Yadea T5L features advanced smart connectivity designed to simplify everyday use. With Bluetooth-based keyless unlocking, the scooter automatically unlocks as you approach with your smartphone, no keys or internet connection required. Through the YADEA mobile app, one main account can share access with up to five sub-accounts, making it convenient for family use. The intelligent energy-monitoring dashboard provides real-time insights into battery status and ride performance, while the TTFAR energy-retrieving controller improves efficiency by recovering energy during riding, helping extend overall range.\nCOMFORTABLE, SAFE & SECURE\nDesigned for daily comfort and confidence, the Yadea T5L is equipped with a hydraulic front suspension and 2-way adjustable hydraulic rear shock absorbers, ensuring a stable and comfortable ride on uneven city roads. Its front disc brake and rear drum brake provide dependable braking performance for everyday urban conditions. For added peace of mind, the smart BMS battery system enables real-time battery monitoring and low-battery alerts. Security features such as Find My Scooter and a movement alert system help protect the scooter against unauthorized movement when parked. Trust the Yadea T5L for a ride that seamlessly combines smart technology, safety, efficiency, and comfort.\nSPECIFICATIONS\nBattery 72V 30Ah LFP\nTechnology TTFAR\nRange on (Mode 1) 140 Km/Hr. on single charge\nMax Speed 51 Km/Hr.\nCharge Time 5-6 hours\nRated Power 1500 W\nPeak Power 2400 W\nTECHNICAL DETAILS\nLength*width*height-wheel base 1780*670*1095*1270\nSpan Length 340 mm\nTorque 100 N.m\nGradeability/Climbing Capacity 16 degree\nColors Blue, Grey\nSMART FEATURES\nBluetooth-detected Unlocking Hand-free, key-free. Unlocked upon approaching. No Internet? No problem. Just bring your smart phone and ready to go, say goodbye to key troubles.\nFamily Account-sharing via Yadea  App One main account can share to 5 sub-accounts. Everyone in your family is able to effortlessly control the scooter.\nRemote Keys Equipped with 2 units, it also allows one-button unlocking, making it easy for all-age and all-area users. Without a smart phone? Nothing to worry about.\nEnergy Monitoring Dashboard Charging while riding, giving longer range. Know everything about your rides with the energy-monitoring dashboard.\nBMS Smart Battery Monitoring Check real-time battery percentage anytime via Yadea app, smart low-battery reminder on the dashboard, charge in time, no anxiety.\nOne-Touch Find My Scooter Trigger sound and light alerts via the YADEA App to quickly locate your vehicle.\nMovement Alert Sound and light activated in case of collision, push, or tilt-over, reacting before you do, security in real time."
+    },
+    {
+      "slug": "yadea-t5-electric-scooter-e-bike",
+      "title": "Yadea T5",
+      "headings": [
+        "Explore Beyond Boundaries",
+        "TRAVEL FAR WITH YADEA",
+        "EPIC RIDES, UNFORGETTABLE MOMENTS",
+        "HIGH-RESOLUTION LED CLARITY",
+        "COMFORTABLE, RELIABLE & CONVENIENT"
+      ],
+      "images": [
+        "https://yadea.com.pk/wp-content/uploads/2024/01/White-1-1024x739.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/White-5-1024x1024.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-2.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-5.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-4.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy-3.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9-copy.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/Artboard-9.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/01/3-removebg-preview-1.png",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/011A6237-682x1024.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/011A6349-682x1024.jpg",
+        "https://yadea.com.pk/wp-content/uploads/2024/02/011A6149-682x1024.jpg"
+      ],
+      "text": "Explore Beyond Boundaries\nJoin the Spark with T5\nBuy Now\nTest Drive\nBuy Now\nTest Drive\nTRAVEL FAR WITH YADEA\nEmpower your everyday commute with the Yadea T5 — a smart and efficient e-scooter built for city life. Featuring a high-performance 72V 25Ah Graphene Battery, the T5 offers reliable energy output and consistent performance, delivering up to 75-85 km of range on a single charge. Whether you're navigating busy streets or cruising through quiet lanes, the T5 ensures a smooth and dependable ride. Designed with durability and simplicity in mind, it strikes the perfect balance between power and practicality, making it an ideal choice for modern urban mobility.\nEPIC RIDES, UNFORGETTABLE MOMENTS\nWith an impressive range of 70-80 km on a single charge and a maximum speed of 57 km/hr, you can navigate the urban landscape with ease and confidence, free from the constraints of frequent recharging.\nSpeed\n57 Km/Hr.\nModel\nYadea T5\nTechnology\nttfar\nper charge\n75-85 KM\ncharge time\n5-6 hours\nbattery type\n72V 25 Ah Graphene Battery\nHIGH-RESOLUTION LED CLARITY\nThe expansive LED screen offers real-time visibility into your remaining battery power, ensuring you stay informed at every turn. Coupled with an intelligent dashboard that automatically adjusts brightness based on your surroundings, Yadea T5 guarantees an immersive riding experience.\nCOMFORTABLE, RELIABLE & CONVENIENT\nWith an efficient braking system and tubeless tires, every ride promises a secure and confident experience. Elevate your comfort with plush cushioned seats, ensuring a smooth and enjoyable journey. rust the Yadea T5 for a ride that effortlessly combines safety, efficiency, and unparalleled comfort\nSPECIFICATIONS\nBattery 72V 25 Ah Graphene Battery\nTechnology TTFAR\nRange on (Mode 1) 70-85 Km/Hr. on single charge\nMax Speed 57 Km/Hr.\nCharge Time 5-6 hours\nRated Power 1200 W\nPeak Power 2100 W\nTECHNICAL DETAILS\nLength*width*height-wheel base 1780 x 700 x 1180 mm\nGround Clearance 160 mm\nSpan Length 340 mm\nTorque 86.0 N.m\nGradeability/Climbing Capacity 12 degree\nMax Load 150 KG\nCOLORS\nGray, Red, White\nADVANTAGES OF YADEA ELECTRIC VEHICLES\nReduces the use of fossil energy and make cities cleaner.\nReduces urban congestion and improves travel happiness.\nEnvironment friendly, no tail gas pollution, no noise pollution, low energy consumption."
+    }
+  ],
+  "pages": [
+    {
+      "slug": "about-us",
+      "title": "About Us",
+      "text": "About Yadea\nYadea, the world's leading electric two-wheeler brand, has ranked global No.1 in annual sales for the last 8 consecutive years, with product ranges mainly covering high-performance electric motorcycles, electric mopeds, electric bicycles, and electric kick scooters, and is officially distributed by Eiffel Industries Ltd.\nOur wish\nIncrease Yadea's leadership role in the industry, by creating a new generation that’s identified by a green commuting lifestyle.\nOur mission\nMaster the innovation and core technology of electric vehicles, abide by the international safety/quality standards and provide the world with superior solutions for electric mobility.\nOur promise\nProvide a convenient, safe, free and comfortable ultimate riding experience for our customers.\nInnovation and Development\nYadea focuses on independent R&D (research and development) of products\nCountries and Regions\n30\nMillion Users\n36\nDistributors\n1549\nRetailers\n150000\nNational Level Design Centre\nNational CNAS Laboratory\nR&D Staff\n200\nNational Patents\n1423\nPush the Limits of Aesthetic Design\nAcclaimed within the realms of brand, design, and communication"
+    },
+    {
+      "slug": "faq",
+      "title": "FAQ",
+      "text": "FAQ\nYou can find our help here, we have listed some frequently asked questions here\nCan I have my own independent repair facility perform warranty repairs?\nNo. Only authorized YADEA dealers are allowed to perform warranty work on your YADEA product.\nHow do I get my vehicle repaired while in warranty?\nIn order to obtain warranty coverage, the first step is to take your vehicle to an authorized YADEA dealer for diagnosis. Your dealer will determine if there is warranty coverage. Please see the Dealer Locator to find the dealer closest to you.\nHow do I know when to have my YADEA product serviced?\nPlease see the maintenance section of your owner’s manual. The service intervals in the maintenance schedule are based on average riding conditions. Some items will need more frequent service if you ride in severe conditions or at full throttle. Consult your dealer for recommendations applicable to your individual needs and use.\nHow do I know where to have my YADEA product serviced?\nAny of our authorized service dealers will service your YADEA machine. Check out our dealer locator to find the dealer nearest you.\nWhere are YADEA vehicles made?\nYADEA is a global manufacturer based in Wuxi, China.\nWhere is my nearest dealer?\nYou can find your nearest dealer by using our dealer locator tool.\nWhere can I buy parts?\nParts can be purchased through any of our authorized YADEA dealers.\nWhere can I get my owner’s manual?\nWhen purchased new, all of our vehicles come with an owner’s manual. If you’ve misplaced or damaged your original owner’s manual, contact your YADEA dealer and they will be able to order you a replacement, or you can find digital versions of most of our owner’s manuals here.\nWhere can I get my service manual?\nWhen purchased new, all of our vehicles come with an owner’s manual. If you would like additional information on servicing your vehicle, you can order a service manual through a YADEA dealer. Find your nearest dealer here.\nI have a technical question. Should I call the YADEA headquarters?\nAll questions technical and non-technical should be directed to your local YADEA dealer, who is the best resource for timely and accurate information.\nContact Us\nClick to contact us quickly"
+    },
+    {
+      "slug": "find-a-dealer",
+      "title": "Find a Dealer",
+      "text": "STORE LOCATION\nFind a Dealer\nFrom test rides, to repairs and check-ups, you can get the help you need, when you need it Yadea dealer in Pakistan.\nSearch Location\nCategory\nAll Categories\nDistance\n20 Km\n40 Km\n60 Km\n80 Km\n100 Km\nAll Pakistan\nLocations: 0\nSort by Title\nSort by City\nLoading stores..."
+    },
+    {
+      "slug": "become-a-dealer",
+      "title": "Become a Dealer",
+      "text": "Become A Dealer\nDEALERSHIP APPLICATION\nBecome a Dealer"
+    },
+    {
+      "slug": "test-drive",
+      "title": "Test Drive",
+      "text": "Test Drive\nTake it for a spin, fall in love for real. Schedule your test drive in just a few clicks .\nChoose Your Ride\nYadeaEPOC-H\nSelect\nYadea T5\nSelect\nYadea GT30\nSelect\nYadea Ruibin\nSelect\nYadea M3\nSelect\nYadea T5L\nSelect\nYadea Velax\nSelect\nYadea Keeness\nSelect\nYadea Ruibin S\nSelect\nYadea G5\nSelect\nContact Details\nName\nEmail\nEnter Your Phone No.\nDate for Test Drive\nCity\nLahore\nMultan\nKarachi\nGujrat\nPeshawar\nGujranwala\nIslamabad\nTaxila\nRawalpindi\nNankana Sahib\nFaisalabad\nBahawalpur\nDera Ghazi Khan\nBhalwal\nRahim Yar Khan\nSialkot\nSambrial\nModels\nYadea Ruibin Sport\nYadea M3H\nYadea M3\nYadea EPOC-H\nYadea T5\nYadea GT30\nYadea Ruibin\nYadea T5L\nYadea Velax\nYadea Keeness\nBook Now"
+    },
+    {
+      "slug": "service-support",
+      "title": "Service Support",
+      "text": "Service Support\nContact Us\nClick to contact us quickly"
+    },
+    {
+      "slug": "product-support",
+      "title": "Product Support",
+      "text": "Product Support\nImprove your experience with Yadea by taking just a few moments to register your product. We will come back to your in maximum of 48 business hours Yadea product support.\nSubmit A Ticket\nPick Your Problem *\nReturn\nReplace\nProduct Parts\nProduct Related Questions\nOther\nI have read the Privacy Policy and accept the processing of data for the purposes indicated.\nSend"
+    },
+    {
+      "slug": "contact-us",
+      "title": "Contact Us",
+      "text": ""
+    },
+    {
+      "slug": "news-events",
+      "title": "News & Events",
+      "text": "News & Events\nAll Posts\nBlogs\nEvents\nProducts & Technology\nYadea Ruibin L Electric Bike in Pakistan: Is It a Smart Choice for Daily Commuting?\nOctober 14, 2026\nYadea Velax Complete Review, Specifications & Price\nOctober 8, 2026\nYadea T5L Electric Scooter in Pakistan: Price, Specs, and Complete Review (2026)\nOctober 8, 2026\nYadea GT70 Cyber Complete Review, Specifications & Price\nOctober 7, 2026\nYadea Ruibin L Complete Review, Specifications & Price\nOctober 6, 2026\nCan Two People Ride a Yadea Comfortably? Load Capacity & Safety Guide\nAugust 3, 2026\nHow Fast Does a Yadea Charge? Normal vs Fast Charging Time Explained\nAugust 3, 2026\nYadea Service Centers in Pakistan: Full List, Spare Parts & Maintenance Costs\nAugust 3, 2026\nElectric Scooter Charging at Home Without a UPS: A Practical Guide for Pakistani Load-Shedding Areas\nAugust 3, 2026\nI Switched from a 125cc to a Yadea. Here’s What Nobody Told Me\nJuly 8, 2026\nYadea Electric Scooter Dealers in Lahore: Locations, Prices & Test Rides\nJuly 8, 2026\nElectric Scooter vs Petrol Bike: Total Cost After 1 Year in Pakistan\nJuly 8, 2026\nThe True 10-Year Cost of Owning a 125cc Bike: Enough to Buy a Used Corolla?\nJuly 8, 2026\nA Beginner’s Guide to Choosing the Right Yadea Electric Scooter in Pakistan\nJune 29, 2026\nPetrol Prices Are Rising in Pakistan: Here Is Why EV Is the Smarter Choice\nJune 29, 2026\nHow Much Can Pakistani Riders Actually Save by Switching to a Yadea Electric Bike?\nJune 29, 2026\nYadea Lithium Battery Life Explained: Low Cost, Long Range & 4-Year Coverage\nJune 29, 2026\nElectric Scooter Price in Pakistan 2026: Yadea Complete Model Guide\nMay 7, 2026\nWhy Yadea: What Sets Yadea Apart in Pakistan's Electric Scooter Market\nMay 7, 2026\nBest Electric Scooty for Women in Pakistan 2026\nMay 7, 2026\nBuy Yadea Electric Scooter on 0% Markup Installment: Bank Alfalah SBS Plan 2026\nMay 7, 2026\nWhy More Riders Are Choosing Electric Scooters\nApril 27, 2026\nRising Petrol Prices in Pakistan: Why More Riders Are Choosing Electric Scooters\nApril 27, 2026\nWhy Electric Scooter Bikes Require Less Maintenance Than Petrol Bikes\nApril 27, 2026\nBest Budget Electric Scooters by Yadea in Pakistan\nApril 27, 2026\nMeet the Yadea Velax: Stylish, User-Friendly Electric Scooter\nMarch 31, 2026\nYadea M3H, A Smooth Ride for First-Time Electric Scooter Buyers in Pakistan\nFebruary 12, 2026\nWhy the Yadea T5L Lithium Is the Ultimate Commuter Scooty for Pakistan\nFebruary 12, 2026\nPocket-Friendly Performance: Why the Yadea Ruibin Is Pakistan’s Go-To Entry-Level Electric Scooty\nFebruary 10, 2026\nBest Electric Scooter Warranty in Pakistan\nJanuary 19, 2026\nYadea Best Electric Scooter in Pakistan\nJanuary 19, 2026\nLithium Battery Electric Bikes in Pakistan: An Overview and Advantages\nJanuary 19, 2026\nWhich is the Most Reliable Electric Bike Brand in Pakistan\nJanuary 12, 2026\nNew Electric Scooty Models in Pakistan 2026 – Latest Yadea Launches\nJanuary 11, 2026\nTop Features to Look for in an Electric Scooty – Why Yadea Leads in Pakistan\nJanuary 10, 2026\nTop Electric Bikes in Pakistan: Prices, Features & Best Picks 2026\nJanuary 7, 2026\nEco-Friendly Rides: How Yadea is Powering a Greener Pakistan\nDecember 18, 2025\nUpdated Electric Bike Price List in Pakistan\nDecember 18, 2025\nHow Yadea Batteries Deliver More Range with Every Charge\nDecember 18, 2025\nYadea Electric Scooters vs Petrol Bikes: Real Savings in 2025\nDecember 18, 2025\nTTFAR Explained: Smarter Motors for Longer Rides\nNovember 12, 2025\nFrom Petrol to Electric: No Compromise on Brakes and Suspension\nNovember 12, 2025\nHow to Use the Yadea App and Read Your Digital Speedometer\nNovember 12, 2025\nYadea EPOC on PakWheels: A Closer Look at Pakistan's Top Electric Scooter\nNovember 12, 2025\nYadea EPOC Charging Guide: Time, Battery Care, and Energy Savings\nOctober 1, 2025\nHow Much Does It Cost to Ride a Yadea T5 per Kilometer\nOctober 1, 2025\nHow to Apply for the PAVE Electric Bikes Scheme 2025 in Pakistan\nSeptember 29, 2025\nGraphene and LiFePO4 Batteries Explained: Why Yadea Bikes Last Longer\nSeptember 29, 2025\nWhy Yadea T5 Electric Scooters Are the Future of Pakistan\nAugust 20, 2025\nDiscover Why Electric Bikes Are All The Hype in Cities\nJuly 4, 2025\nBest electric scooty in Pakistan- specs, reviews, and prices\nJuly 4, 2025\nHow Electric Scooties Redefined the ECO-Friendly Travel\nJune 26, 2025\nThinking of Buying an Electric Bike? Read This First\nJune 26, 2025\nYadea Electric Scooty Is the Best Choice for Pakistani Roads\nJune 19, 2025\nBest Electric Scooty in Pakistan under PKR 250,000 — Yadea’s Top Picks\nJune 18, 2025\nTop 3 Yadea Electric Scooter Bikes in Pakistan: Specs, Reviews, and Prices\nJune 18, 2025\nElectric Scooty for Girls in Pakistan – Yadea's Stylish and Safe Options\nMay 30, 2025\nElectric Bike Safety Tips for Riders in Pakistan\nMay 16, 2025\nGovernment Policies on Electric Bikes in Pakistan\nMay 13, 2025\nElectric Bike Step-by-Step Registration Process in Pakistan\nMay 13, 2025\nHow Long Do Electric Bike Batteries Last?\nMay 13, 2025\nElectric Bikes Charging and Maintenance Guide in Pakistan\nMay 6, 2025\nHow Can Electric Bikes Help Save Fuel Costs?\nMay 6, 2025\nWhere to Buy the Best Electric Bikes in Pakistan Online and In-Stores?\nMay 5, 2025\nAre Electric Bikes in Pakistan Worth Buying?\nMay 5, 2025\nHow Yadea Electric Scooty Can Make Your Daily Commute Hassle Free\nFebruary 26, 2025\nEco Friendly and Cost Effective Why YADEA Electric Scooty is a Game Changer\nFebruary 26, 2025\nSave Fuel and Money with Yadea Electric Scooty in Pakistan\nFebruary 17, 2025\nTop Reasons to Switch to YADEA Electric Scooty Today\nFebruary 17, 2025\nYadea Showcases at the World's Biggest Trade Exhibition: Canton Fair 2024\nOctober 21, 2024\nYadea Unveils Global Flagship Model EPOC in Pakistan\nOctober 8, 2024\nYadea Collaborates with Madrid Food Bank to Promote New Urgent Proximity Distribution in Spain\nOctober 8, 2024\nYadea Showcases Latest in E-mobility for Sustainable Urban Travel at CES 2024\nJanuary 17, 2024"
+    },
+    {
+      "slug": "refund_returns",
+      "title": "Refund and Returns Policy",
+      "text": "Refund and Returns Policy\nOverview\nOur refund and returns policy lasts 30 days. If 30 days have passed since your purchase, we can't offer you a full refund or exchange.\nTo be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.\nSeveral types of goods are exempt from being returned. Perishable goods such as food, flowers, newspapers or magazines cannot be returned. We also do not accept products that are intimate or sanitary goods, hazardous materials, or flammable liquids or gases.\nAdditional non-returnable items:\nGift cards\nDownloadable software products\nSome health and personal care items\nTo complete your return, we require a receipt or proof of purchase.\nPlease do not send your purchase back to the manufacturer. For guidance on your purchase, you can contact Yadea Pakistan or visit an authorized Yadea dealer .\nThere are certain situations where only partial refunds are granted:\nBook with obvious signs of use\nCD, DVD, VHS tape, software, video game, cassette tape, or vinyl record that has been opened\nAny item not in its original condition, is damaged or missing parts for reasons not due to our error\nAny item that is returned more than 30 days after delivery\nRefunds\nOnce your return is received and inspected, we will send you an email to notify you that we have received your returned item. We will also notify you of the approval or rejection of your refund.\nIf you are approved, then your refund will be processed, and a credit will automatically be applied to your credit card or original method of payment, within a certain amount of days.\nLate or Missing Refunds\nIf you haven't received a refund yet, first check your bank account again.\nThen contact your credit card company, as it may take some time before your refund is officially posted.\nNext, contact your bank. There is often some processing time before a refund is posted. You can also find consumer guidance on the State Bank of Pakistan website .\nIf you've done all of this and you still have not received your refund yet, please contact us at hello@yadea.com.pk or call our UAN 021-111-300-375.\nExchanges\nWe only replace items if they are defective or damaged. If you need to exchange it for the same item, send us an email at hello@yadea.com.pk and send your item to: [Physical Address].\nFor warranty-related concerns, please visit our Service Support page, or see Product Support for help with your product.\nGifts\nIf the item was marked as a gift when purchased and shipped directly to you, you'll receive a gift credit for the value of your return. Once the returned item is received, a gift certificate will be mailed to you.\nIf the item wasn't marked as a gift when purchased, or the gift giver had the order shipped to themselves to give to you later, we will send a refund to the gift giver and they will find out about your return.\nShipping Returns\nTo return your product, you should mail your product to: [Physical Address].\nYou will be responsible for paying for your own shipping costs for returning your item. Shipping costs are non-refundable. If you receive a refund, the cost of return shipping will be deducted from your refund.\nDepending on where you live, the time it may take for your exchanged product to reach you may vary.\nIf you are returning more expensive items, you may consider using a trackable shipping service such as TCS or Pakistan Post , or purchasing shipping insurance. We don't guarantee that we will receive your returned item.\nNeed Help?\nContact us at hello@yadea.com.pk for questions related to refunds and returns. You can also reach us through our Contact Us page. To learn how we handle your information, read our Privacy Policy and Terms & Conditions ."
+    },
+    {
+      "slug": "terms-and-conditions",
+      "title": "Terms & Conditions",
+      "text": "Terms & Conditions\nWelcome to Yadea Pakistan . This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our website, www.yadea.com.pk , or engage with our services.\n1. Information We Collect\na. Personal Information\nWe may collect and store the following:\nYour name, email, and phone number\nBilling and shipping address\nPayment information (handled securely via third-party providers)\nPurchase history and order details\nb. Technical and Usage Information\nIP address\nBrowser type and device information\nPages visited on our website\nCookies and tracking data\n2. How We Use Your Information\nWe use the information to:\nProcess your orders and deliver electric bikes or accessories\nRespond to your customer support inquiries\nSend promotional emails and product updates (if you've opted in)\nImprove website performance and customer experience\nMeet legal and regulatory obligations\n3. Sharing of Information\nWe do not sell your data. However, your information may be shared with:\nTrusted partners , such as delivery services and payment processors\nLegal authorities , if required by law\nMarketing service providers , only if you have given explicit consent\n4. Cookies and Tracking Technologies\nWe use cookies to:\nUnderstand user behavior on our website\nSave your preferences for future visits\nEnable cart functionality and secure logins\nYou can disable cookies in your browser settings, though some features may not function correctly.\n5. Your Data Protection Rights\nYou have the right to:\nRequest access to the personal data we hold\nRequest correction or deletion of your information\nOpt out of direct marketing at any time\nTo request any of the above, email us at hello@yadea.com.pk .\n6. Data Security\nWe implement industry-standard security measures to protect your personal data. However, no online platform is 100% secure, and we recommend exercising caution when sharing information online.\n7. Third-Party Links\nOur website may link to external sites. We are not responsible for the content or privacy practices of those websites.\n8. Updates to This Policy\nWe may update this Privacy Policy periodically. Any changes will be posted on this page with an updated effective date.\n9. Contact Us\nFor questions or concerns about this Privacy Policy or how we handle your data, please contact us:\nYadea Bikes Pakistan\n📧 Email: hello@yadea.com.pk\n🌐 Website: www.yadea.com.pk\n📍 Address: Find a Store Near You"
+    },
+    {
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "text": "Privacy Policy\nWelcome to Yadea Pakistan . This Privacy Policy outlines how we collect, use, and protect your personal information when you interact with our website, www.yadea.com.pk , or engage with our services.\n1. Information We Collect\na. Personal Information\nWe may collect and store the following:\nYour name, email, and phone number\nBilling and shipping address\nPayment information (handled securely via third-party providers)\nPurchase history and order details\nb. Technical and Usage Information\nIP address\nBrowser type and device information\nPages visited on our website\nCookies and tracking data\n2. How We Use Your Information\nWe use the information to:\nProcess your orders and deliver electric bikes or accessories\nRespond to your customer support inquiries\nSend promotional emails and product updates (if you've opted in)\nImprove website performance and customer experience\nMeet legal and regulatory obligations\n3. Sharing of Information\nWe do not sell your data. However, your information may be shared with:\nTrusted partners , such as delivery services and payment processors\nLegal authorities , if required by law\nMarketing service providers , only if you have given explicit consent\n4. Cookies and Tracking Technologies\nWe use cookies to:\nUnderstand user behavior on our website\nSave your preferences for future visits\nEnable cart functionality and secure logins\nYou can disable cookies in your browser settings, though some features may not function correctly.\n5. Your Data Protection Rights\nYou have the right to:\nRequest access to the personal data we hold\nRequest correction or deletion of your information\nOpt out of direct marketing at any time\nTo request any of the above, email us at hello@yadea.com.pk .\n6. Data Security\nWe implement industry-standard security measures to protect your personal data. However, no online platform is 100% secure, and we recommend exercising caution when sharing information online.\n7. Third-Party Links\nOur website may link to external sites. We are not responsible for the content or privacy practices of those websites.\n8. Updates to This Policy\nWe may update this Privacy Policy periodically. Any changes will be posted on this page with an updated effective date.\n9. Contact Us\nFor questions or concerns about this Privacy Policy or how we handle your data, please contact us:\nYadea Bikes Pakistan\n📧 Email: hello@yadea.com.pk\n🌐 Website: www.yadea.com.pk\n📍 Address: Find a Store Near You"
+    },
+    {
+      "slug": "govt-page",
+      "title": "GOVT Page",
+      "text": "Apply Now\nRide the Future with Rs. 50,000 Govt Subsidy ⚡\nYadea - the world’s No.1 electric two-wheeler company, trusted in 30+ countries , and with 100M+ riders worldwide , is now part of the Pakistan Accelerated Vehicle Electrification (PAVE) Program 2025 under Eiffel Industries Ltd.\n*Apply today and become one of the 40,000 riders entering Pakistan’s electric future.*\nYadea Velax\nPower Meets Prestige.\nBattery: 72V 30Ah LiFePO4\nMotor: 2000W BLDC\nMax Speed: 62 km/h\nRange: 66 km/charge\nAdd LiCharging Time: 6 hrs\nIP-67: waterproof rating\nWarranty: 3 yrs / 50,000 km battery | 2 yrs / 40,000 km vehicle\nBefore: Rs. 490,000 | After: 440,000\nGovt Subsidy: Rs. 50,000\nWhy Velax?\nFor bold riders who want style + muscle.\nBook Your Velax Now\nYadea T5L\nSmart Range. Smarter Choice.\nBattery: 72V 30Ah LiFePO4\nMotor: 1500W BLDC\nMax Speed: 50 km/h\nRange: 70-80 km/charge\nAdd LiCharging Time: 6 hrs\nIP-67: waterproof rating\nWarranty: 3 yrs / 50,000 km battery | 2 yrs / 40,000 km vehicle\nBefore: Rs. 285,000 | After: 235,000\nGovt Subsidy: Rs. 50,000\nWhy T5L?\nPerfect balance of daily use, comfort, and savings.\nBook Your T5L Now\nYadea M3H\nCompact. Efficient. Affordable.\nBattery: 60V 30Ah LiFePO4\nMotor: 1200W BLDC\nMax Speed: 45 km/h\nRange: 60-70 km/charge\nAdd LiCharging Time: 6 hrs\nIP-67: waterproof rating\nWarranty: 3 yrs / 50,000 km battery | 2 yrs / 40,000 km vehicle\nBefore: Rs. 250,000 | After: 200,000\nGovt Subsidy: Rs. 50,000\nWhy M3H?\nBest for students, women, and families looking for everyday mobility.\nBook Your M3H Now\nHow to Apply for Your Subsidized Yadea\n1️⃣\nVisit pave.gov.pk\n2️⃣\nSign up with CNIC, mobile, and email\n3️⃣\nLogin → Select “Electric Motorcycle”\n4️⃣\nChoose Eiffel Industries Ltd. (Yadea Pakistan)\n5️⃣\nSelect your Yadea model (Velax, T5, or M3H)\n6️⃣\nUpload CNIC and required documents\n7️⃣\nSubmit before 30th September 2025\n8️⃣\nWait for Govt computerized lucky draw\nApply Now\nNote: No driving license required for motorcycles.\nFaq's\n🌱\nReduce fuel costs and carbon emissions\n💸\nRs. 50,000 subsidy on every electric bike\n💳\nEasy installments (2 years | 0% markup)\n🔋\nGovernment Standard Warranty: 36 months / 40,000 km\nYadea Exclusive Warranty: Extra 1 year / 10,000 km → Total 4 years / 50,000 km\n🛠\nStrong 3S Dealer Network across Pakistan (Sales, Service & Spare Parts)\n🙌\nPriority for students, women, widows, and low-income families\nChoose Your Yadea Ride ⚡\nDeadline to apply: 30th September 2025\nWinners chosen via transparent Govt computerized lucky draw.\nApply Now"
+    },
+    {
+      "slug": "products",
+      "title": "Our Products",
+      "text": "Our Products\nYADEA GT30\n194,000 PKR\nExplore More\nYADEA EPOC-H\n355,000 PKR\nExplore More\nYADEA RUIBIN S\n193,000 PKR\nExplore More\nYADEA M3\n174,000 PKR\nExplore More\nYADEA RUIBIN\n209,000 PKR\nExplore More\nYADEA T5\n253,500 PKR\nExplore More\nYADEA T5L\n305,000 PKR\nExplore More\nYADEA M3H\n255,000 PKR\nExplore More\nYADEA VELAX\n444,000 PKR\nExplore More\nYADEA KEENESS\n1,400,000 PKR\nExplore More\nYADEA GT70\n479,000 PKR\nExplore More\nYADEA RUIBIN L\n270,000 PKR\nExplore More\nAdd Your Heading Text Here\nYADEA G5\nExplore More\nAdd Your Heading Text Here"
+    }
+  ],
+  "nav": [],
+  "home": {
+    "nav": [
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/products/",
+        "text": "Products"
+      },
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/news-events",
+        "text": "News & Events"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/find-a-dealer/",
+        "text": "Find a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-ruibin-s/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-t5l/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-m3h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-velax/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-keeness/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-ruibin-s/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/test-drive/",
+        "text": "Book a Test Ride"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-t5l/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-m3h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-velax/",
+        "text": "Learn More"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-keeness/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/yadea-epoc-h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-epoc-h-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "/yadea-epoc-h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-epoc-h-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "/yadea-epoc-h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-epoc-h-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "/yadea-epoc-h/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-epoc-h-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "/yadea-ruibin/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-ruibin-electric-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "/yadea-gt30/",
+        "text": "Learn More"
+      },
+      {
+        "href": "/product/yadea-gt30-electric-scooter-e-bike/",
+        "text": "Buy Now"
+      },
+      {
+        "href": "https://yadea.com.pk/yadea-velax-complete-review-specifications-price/",
+        "text": "Yadea Velax Complete Review, Specifications & Price"
+      },
+      {
+        "href": "https://yadea.com.pk/",
+        "text": "Home"
+      },
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us/",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://yadea.com.pk/",
+        "text": "Home"
+      },
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us/",
+        "text": "Contact Us"
+      },
+      {
+        "href": "https://yadea.com.pk/find-a-dealer/",
+        "text": "Find a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/find-a-dealer/",
+        "text": "Find a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/privacy-policy",
+        "text": "Privacy & Policy"
+      },
+      {
+        "href": "https://yadea.com.pk/terms-and-conditions/",
+        "text": "Terms & Conditions"
+      },
+      {
+        "href": "https://yadea.com.pk/privacy-policy",
+        "text": "Privacy & Policy"
+      },
+      {
+        "href": "https://yadea.com.pk/terms-and-conditions/",
+        "text": "Terms & Conditions"
+      },
+      {
+        "href": "https://yadea.com.pk/products/",
+        "text": "Products"
+      },
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us",
+        "text": "Contact Us Now"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/news-events",
+        "text": "News & Events"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/find-a-dealer/",
+        "text": "Find a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/products/",
+        "text": "Products"
+      },
+      {
+        "href": "https://yadea.com.pk/about-us/",
+        "text": "About Us"
+      },
+      {
+        "href": "https://yadea.com.pk/contact-us",
+        "text": "Contact Us Now"
+      },
+      {
+        "href": "https://yadea.com.pk/become-a-dealer/",
+        "text": "Become a Dealer"
+      },
+      {
+        "href": "https://yadea.com.pk/news-events",
+        "text": "News & Events"
+      },
+      {
+        "href": "https://yadea.com.pk/service-support/",
+        "text": "Service Support"
+      },
+      {
+        "href": "https://yadea.com.pk/product-support/",
+        "text": "Product Support"
+      },
+      {
+        "href": "https://yadea.com.pk/find-a-dealer/",
+        "text": "Find a Dealer"
+      }
+    ],
+    "headings": [
+      "YADEA",
+      "Latest Models",
+      "TTFAR Technology",
+      "Popular Products",
+      "Adventure",
+      "Greener Electric Future with Yadea",
+      "Step into smarter city riding with Yadea T5L.",
+      "Experience the urban edge with Yadea Velax.",
+      "Ride the future in style with Ruibin L",
+      "Lithium Iron Phosphate Batteries",
+      "The Electric Experience",
+      "Our",
+      "IMPACT",
+      "Why Yadea?",
+      "Quality",
+      "Warranty",
+      "3S Showrooms with Certified Trained Technicians",
+      "Yadea Insights",
+      "MONITOR",
+      "@yadeapakistan",
+      "Get In Touch",
+      "Quick Links",
+      "Support",
+      "Subscribe"
+    ],
+    "text": "Best Electric Scooter | Electric Bikes in Pakistan - YADEA\nSkip to content\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts search\nProducts search\nYADEA\nYadea, the world's leading electric two-wheeler brand, has ranked global No.1 in annual sales for the last 9 consecutive years, with product ranges mainly covering high-performance electric motorcycles, electric mopeds, electric bicycles, and electric kick scooters, and is officially distributed by Eiffel Industries Ltd.\nLatest Models\nGT70\nRuibin L\nYadea T5L\nYadea Velax\nYadea Keeness\nGT70\nGT70\n2TTFAR Smart Drive System 2,000W High-Torque Motor 72V 50Ah Lithium Iron Phosphate (LFP) Battery 5Front and Rear Disc Brakes 90/90-12 Front & 100/80-12 Rear Tires Energy-Retrieving Controller Smart Keyless Unlocking & Anti-Theft System\nLearn More Book a Test Ride\nRuibin L\nRuibin L\n70 KM/H Top Speed\n150 KM Range\n3.0 KW Motor\n72V 38Ah Battery\nLED Lighting\nLearn More Book a Test Ride\nYadea T5L\nYadea T5L\n80 KM/H Top Speed\n150 KM Range\n5.0 KW Motor\n72V 38Ah Battery\nDisc Brakes\nLearn More Book a Test Ride\nYadea Velax\nYadea Velax\n65 KM/H Top Speed\n85 KM Range\n3200W Peak Power\n2000W Motor\n72V 30Ah Battery\nLearn More Book a Test Ride\nYadea Keeness\nYadea Keeness\n100 KM/H Top Speed\n129 KM Range\n11 KW Mid-Mounted Motor\n300 Nm Max Torque\n72V 32Ah × 2 Battery\nLearn More Book a Test Ride\nYadea Ruibin S\nYadea Ruibin S\n2000W Peak Power Motor 1000W Rated Power  80Km Range  50Km/Hr Top Speed 72V 25Ah Graphene Baterry Reverse Gear TCS & HDC Bluetooth Kyeless Unlock Smart App Conectivity  24 Months, 20,000KM Battery Warranty\nPrice: 193,000 PKR\nLearn More Book a Test Ride\nYadea T5L\nYadea T5L\n1500W High-Torque Motor\n2700W Peak Power\n80–100 km Long Range\n51 km/h Top Speed\nLFP Battery Technology\nAdaptive Power\nBluetooth Keyless Unlock\nEnergy-Retrieving Controller\nSmart App Connectivity\n4years, 50,000KM Warranty   Price: 305,000 PKR\nLearn More Book a Test Ride\nYadea M3H\nYadea M3H\n1200W High-Torque Motor\n2200W Peak Power\n110 km (Eco Mode) 70 km (Sports Mode)\n45 km/h Top Speed\nLFP Battery Technology\nBluetooth Keyless Unlock\nEnergy-Retrieving Controller\nSmart App Connectivity\n4years, 50,000KM Warranty   Price: 255,000 PKR\nLearn More Book a Test Ride\nYadea Velax\nYadea Velax\n2000W High-Torque Motor\n3200W Peak Power\n85km Long Range (ECO Mode)\n65 km/h Top Speed\nLFP Battery Technology\nBluetooth Keyless Unlock\nEnergy-Retrieving Controlle\nSmart App Connectivity\n4years, 50,000KM Battery Warranty   Price: 444,000 PKR\nLearn More Book a Test Ride\nYadea Keeness\nYadea Keeness\n5500W Mid Mounted Motor\n11KW Peak Power\n129Km Range\n100Km/Hr Top Speed\nTernary LFP Battery Technology\nBluetooth Keyless Unlock\nEnergy-Retrieving Controller\nSmart App Connectivity\nAdaptive Power\n24Months, 20,000KM Warranty Price: 1,400,000 PKR\nLearn More Book a Test Ride\nTTFAR Technology\nBuilt on integrated motor, energy retrieving controller, and battery systems, Yadea TTFAR Technology delivers longer range, stable power output, and consistent riding performance.\n3X Lifespan\n25% Capacity Upgrade\n-20°C to 55°C Operating Temperature\n86% Efficiency\nExplore EV Range\nPopular Products\nGT70\nRuibin L\nYadea T5L\nGT70\nGT70\nPKR 479,000\nLearn More\nRuibin L\nRuibin L\nPKR 270,000\nLearn More\nYadea T5L\nYadea T5L\nPKR 305,000\nLearn More\nYadea Epoc-H\nYadea Epoc-H\nPKR 355,000\nLearn More\nYadea Ruibin\nYadea Ruibin\nPKR 209,000\nLearn More\nYadea GT30\nYadea GT30\nPKR 194,000\nLearn More\nAdventure\nGreener Electric Future with Yadea\nZero CO2 Emissions\nReduced Fuel Dependency\nSustainable Mobility\nYADEA electric vehicles are designed to support a greener mobility ecosystem by reducing carbon dioxide emissions, improving energy efficiency, and lowering dependence on fossil fuels. Through thoughtful engineering and electric vehicle technology, YADEA contributes to cleaner urban transport and more sustainable everyday commuting.\nBook a Test Ride\nStep into smarter city riding with Yadea T5L.\nBook a Test Ride\nExperience the urban edge with Yadea Velax.\nBook a Test Ride\nRide the future in style with Ruibin L\nBook a Test Ride\nLithium Iron Phosphate Batteries\nLong Lifespan, Extended Warranty. Reliable for Frequent Riders. High-capacity LFP battery technology - daily commutes are effortless to handle, no range anxiety, just smooth control. use this information\nExplore Lithium Models\nThe Electric Experience\nPunjab IT Board Official\nPAVE Program - Self Finance\nThe Pakistan Accel­erated Vehicle Elect­rification (PAVE) scheme aims to accelerate the country’s transition tow­ards clean, affordable and sustainable transportation, reduce reliance on fossil fuels and support the growth of domestic electric vehicle manufacturing.\nPunjab IT Board Official\nPAVE Program - Bank Lease\nThe Pakistan Accel­erated Vehicle Elect­rification (PAVE) scheme aims to accelerate the country’s transition tow­ards clean, affordable and sustainable transportation, reduce reliance on fossil fuels and support the growth of domestic electric vehicle manufacturing.\nYadea Pakistan\nSunil Munj's Review | Yadea Epoc-h\nIs the Yadea Epoch the game-changer in electric scooters? Suneel Munj takes it for a spin and gives his expert verdict on its performance, battery life, ride quality, and more.\nView All\nOur\nIMPACT\nNO.1\nGlobal No.1 for 9 consecutive years in sales volume\nNO.1\nGlobal No.1 for 9 consecutive years in sales volume\n376,176,329,773 km\nGlobal Accumulated Riding Miles\n376,176,329,773 km\nGlobal Accumulated Riding Miles\n3,259,568,292 trees\nEquivialent to Planting\n3,259,568,292 trees\nEquivialent to Planting\n65,191,361,710 kg\nReduced CO2 Emissions\n65,191,361,710 kg\nReduced CO2 Emissions\nMillions\nYadea Riders Worldwide\nMillions\nYadea Riders Worldwide\nYADEA STORES\nYadea has over 120+ dealerships all across Pakistan\nSUPPORT CENTER\nYADEA is committed to its customers quality policies and services\nWhy Yadea?\nOur high-quality, affordable rides empower you to reduce your carbon footprint while cruising in style and safety. Join us in transforming city travel, one electric ride at a time!\nQuality\nBuilt with durable construction to ensure long-lasting performance and reliability on every ride.\nWarranty\nEnjoy stress-free claims with Yadea’s comprehensive warranty, giving you complete peace of mind.\n3S Showrooms with Certified Trained Technicians\nOur nationwide 3S showrooms provide Sales, Service, and Spare Parts under one roof. Backed by certified and professionally trained technicians, we ensure expert maintenance, genuine parts, and reliable support to keep your EV performing at its best.\nVIEW ALL\nYadea Insights\nYadea Ruibin L Electric Bike in Pakistan: Is It a Smart Choice for Daily Commuting?\nOctober 14, 2026 /\nNo Comments\nYadea Ruibin L Electric Bike in Pakistan Choosing a bike for daily travel is not just about its appearance or...\nRead More\nYadea Velax Complete Review, Specifications & Price\nOctober 8, 2026 /\nNo Comments\nYadea Velax  Electric scooters are catching on fast in Pakistan, and the Yadea Velax is one of the models people...\nRead More\nYadea T5L Electric Scooter in Pakistan: Price, Specs, and Complete Review (2026)\nOctober 8, 2026 /\nNo Comments\nYadea T5L Introduction Pakistan's automotive landscape is shifting rapidly toward sustainable mobility, and electric scooters are leading this transformation. Among...\nRead More\nYadea GT70 Cyber Complete Review, Specifications & Price\nOctober 7, 2026 /\nNo Comments\nYadea GT70 Cyber Rising petrol prices have pushed many Pakistani riders to look for a smarter way to commute. If...\nRead More\nVIEW ALL\nMONITOR\n@yadeapakistan\nFacebook\nInstagram\nYoutube\nLinkedin\nTiktok\nGet In Touch\nhello@yadea.com.pk\n021-111-300-375\nQuick Links\nHome\nAbout Us\nContact Us\nHome\nAbout Us\nContact Us\nSupport\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nSubscribe\nReceive the Latest News from Yadea\nEmail\nSubscribe\nCopyright © 2026 Yadea Technology Group Co.,Ltd.All Rights Reserved.\nPrivacy & Policy\nTerms & Conditions\nPrivacy & Policy\nTerms & Conditions\nYour Cart\n( 0 )\n(Save %)\nYour Cart is Empty!\nIt looks like you haven't added any items to your cart yet.\nBrowse Products\nSubtotal\nShipping & taxes calculated at checkout.\n₨ 0\nCheckout Now\nPowered by Caddy\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer",
+    "images": [
+      "https://yadea.com.pk/wp-content/uploads/2026/06/web.jpg",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/Yadea-keenes.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-velax.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-epoch.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-T5L-1.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/06/yadea-ruibin.jpg",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-t5l-1-1.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-keenes-1.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-epoch-1.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/03/yadea-velax-1.webp",
+      "https://yadea.com.pk/wp-content/uploads/2026/09/GT70-左45-繁星黑-1-300x188.png",
+      "https://yadea.com.pk/wp-content/uploads/2026/10/RUIBIN-L-索罗灰-左180.png"
+    ]
+  },
+  "dealers": [],
+  "faqs": [],
+  "dealerRaw": "Yadea Dealer in Pakistan | Find a Showroom\nSkip to content\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts search\nProducts search\nSTORE LOCATION\nFind a Dealer\nFrom test rides, to repairs and check-ups, you can get the help you need, when you need it Yadea dealer in Pakistan.\nSearch Location\nCategory\nAll Categories\nDistance\n20 Km\n40 Km\n60 Km\n80 Km\n100 Km\nAll Pakistan\nLocations: 0\nSort by Title\nSort by City\nLoading stores...\nFacebook\nInstagram\nYoutube\nLinkedin\nTiktok\nGet In Touch\nhello@yadea.com.pk\n021-111-300-375\nQuick Links\nHome\nAbout Us\nContact Us\nHome\nAbout Us\nContact Us\nSupport\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nSubscribe\nReceive the Latest News from Yadea\nEmail\nSubscribe\nCopyright © 2026 Yadea Technology Group Co.,Ltd.All Rights Reserved.\nPrivacy & Policy\nTerms & Conditions\nPrivacy & Policy\nTerms & Conditions\nYour Cart\n( 0 )\n(Save %)\nYour Cart is Empty!\nIt looks like you haven't added any items to your cart yet.\nBrowse Products\nSubtotal\nShipping & taxes calculated at checkout.\n₨ 0\nCheckout Now\nPowered by Caddy\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer",
+  "dealerImages": [
+    "https://yadea.com.pk/wp-content/uploads/2023/12/2-1536x1536.png"
+  ],
+  "faqRaw": "Yadea FAQ Pakistan | Warranty Support & Dealer Assistance\nSkip to content\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nExplore More\nExplore More\nAbout Yadea\nAbout Us\nContact Us\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts search\nProducts search\nFAQ\nYou can find our help here, we have listed some frequently asked questions here\nCan I have my own independent repair facility perform warranty repairs?\nNo. Only authorized YADEA dealers are allowed to perform warranty work on your YADEA product.\nHow do I get my vehicle repaired while in warranty?\nIn order to obtain warranty coverage, the first step is to take your vehicle to an authorized YADEA dealer for diagnosis. Your dealer will determine if there is warranty coverage. Please see the Dealer Locator to find the dealer closest to you.\nHow do I know when to have my YADEA product serviced?\nPlease see the maintenance section of your owner’s manual. The service intervals in the maintenance schedule are based on average riding conditions. Some items will need more frequent service if you ride in severe conditions or at full throttle. Consult your dealer for recommendations applicable to your individual needs and use.\nHow do I know where to have my YADEA product serviced?\nAny of our authorized service dealers will service your YADEA machine. Check out our dealer locator to find the dealer nearest you.\nWhere are YADEA vehicles made?\nYADEA is a global manufacturer based in Wuxi, China.\nWhere is my nearest dealer?\nYou can find your nearest dealer by using our dealer locator tool.\nWhere can I buy parts?\nParts can be purchased through any of our authorized YADEA dealers.\nWhere can I get my owner’s manual?\nWhen purchased new, all of our vehicles come with an owner’s manual. If you’ve misplaced or damaged your original owner’s manual, contact your YADEA dealer and they will be able to order you a replacement, or you can find digital versions of most of our owner’s manuals here.\nWhere can I get my service manual?\nWhen purchased new, all of our vehicles come with an owner’s manual. If you would like additional information on servicing your vehicle, you can order a service manual through a YADEA dealer. Find your nearest dealer here.\nI have a technical question. Should I call the YADEA headquarters?\nAll questions technical and non-technical should be directed to your local YADEA dealer, who is the best resource for timely and accurate information.\nContact Us\nClick to contact us quickly\nFacebook\nInstagram\nYoutube\nLinkedin\nTiktok\nGet In Touch\nhello@yadea.com.pk\n021-111-300-375\nQuick Links\nHome\nAbout Us\nContact Us\nHome\nAbout Us\nContact Us\nSupport\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nFind a Dealer\nProduct Support\nService Support\nBecome a Dealer\nSubscribe\nReceive the Latest News from Yadea\nEmail\nSubscribe\nCopyright © 2026 Yadea Technology Group Co.,Ltd.All Rights Reserved.\nPrivacy & Policy\nTerms & Conditions\nPrivacy & Policy\nTerms & Conditions\nYour Cart\n( 0 )\n(Save %)\nYour Cart is Empty!\nIt looks like you haven't added any items to your cart yet.\nBrowse Products\nSubtotal\nShipping & taxes calculated at checkout.\n₨ 0\nCheckout Now\nPowered by Caddy\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer\nProducts\nAbout Yadea\nAbout Us\nContact Us Now\nBecome a Dealer\nNews & Events\nSupport\nService Support\nProduct Support\nFind a Dealer"
+}

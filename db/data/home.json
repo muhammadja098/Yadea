@@ -1,0 +1,91 @@
+{
+  "hero_slides": [
+    {
+      "name": "GT70 Cyber",
+      "spec": "2TTFAR Smart Drive System|2,000W High-Torque Motor|72V 50Ah LFP Battery|Front & Rear Disc Brakes|Smart Keyless Unlocking",
+      "image": "/img/f9671519794a.png",
+      "link": "/models/gt70-cyber"
+    },
+    {
+      "name": "Ruibin L",
+      "spec": "70 KM/H Top Speed|150 KM Range|3.0 KW Motor|72V 38Ah Battery|LED Lighting",
+      "image": "/img/d89033055dc2.png",
+      "link": "/models/ruibin-l"
+    },
+    {
+      "name": "Yadea T5L",
+      "spec": "80 KM/H Top Speed|150 KM Range|5.0 KW Motor|72V 38Ah Battery|Disc Brakes",
+      "image": "/img/c663122d01c5.png",
+      "link": "/models/yadea-t5l"
+    },
+    {
+      "name": "Yadea Velax",
+      "spec": "65 KM/H Top Speed|85 KM Range|3200W Peak Power|2000W Motor|72V 30Ah Battery",
+      "image": "/img/2260d6eb0276.png",
+      "link": "/models/yadea-velax"
+    },
+    {
+      "name": "Yadea Keeness",
+      "spec": "100 KM/H Top Speed|129 KM Range|11 KW Mid-Mounted Motor|300 Nm Max Torque|72V 32Ah x 2 Battery",
+      "image": "/img/c663122d01c5.png",
+      "link": "/models/yadea-keeness"
+    }
+  ],
+  "impact": [
+    [
+      "NO.1",
+      "Global No.1 for 9 consecutive years in sales volume"
+    ],
+    [
+      "376,176,329,773 km",
+      "Global Accumulated Riding Miles"
+    ],
+    [
+      "3,259,568,292 trees",
+      "Equivalent to Planting"
+    ],
+    [
+      "65,191,361,710 kg",
+      "Reduced CO2 Emissions"
+    ],
+    [
+      "Millions",
+      "Yadea Riders Worldwide"
+    ]
+  ],
+  "why_yadea": [
+    {
+      "title": "Quality",
+      "text": "Built with durable construction to ensure long-lasting performance and reliability on every ride."
+    },
+    {
+      "title": "Warranty",
+      "text": "Enjoy stress-free claims with Yadea's comprehensive warranty, giving you complete peace of mind."
+    },
+    {
+      "title": "3S Showrooms",
+      "text": "Our nationwide 3S showrooms provide Sales, Service and Spare Parts under one roof, backed by certified and professionally trained technicians."
+    }
+  ],
+  "lithium_points": [
+    {
+      "title": "3X Lifespan",
+      "text": "LFP cells deliver three times the lifespan of conventional lead-acid packs."
+    },
+    {
+      "title": "25% Capacity Upgrade",
+      "text": "Higher usable capacity for a longer, more confident range."
+    },
+    {
+      "title": "-20°C to 55°C",
+      "text": "Wide operating temperature range for all-weather riding."
+    },
+    {
+      "title": "86% Efficiency",
+      "text": "Energy-retrieving controller keeps system efficiency high."
+    }
+  ],
+  "hero_intro": "Yadea, the world's leading electric two-wheeler brand, has ranked global No.1 in annual sales for the last 9 consecutive years, with product ranges mainly covering high-performance electric motorcycles, electric mopeds, electric bicycles, and electric kick scooters, and is officially distributed by Eiffel Industries Ltd.",
+  "logo": "/img/0d8e75294444.svg",
+  "og_image": "/img/a7f81b93e05b.jpg"
+}

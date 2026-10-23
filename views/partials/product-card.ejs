@@ -1,0 +1,29 @@
+<div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 flex flex-col hover:shadow-md transition-shadow group">
+  <div class="relative bg-gray-50 p-6">
+    <% if (m.featured) { %><span class="absolute top-4 left-4 bg-brand-orange text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full font-montserrat">Popular</span><% } %>
+    <% if (m.stock_status === 'out-of-stock') { %><span class="absolute top-4 right-4 bg-black text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full font-montserrat">Out of stock</span><% } %>
+    <a href="/models/<%= m.slug %>" class="block">
+      <img src="<%= m.hero_image %>" alt="<%= m.name %>" loading="lazy"
+           class="w-full h-44 object-contain mx-auto group-hover:scale-105 transition-transform duration-500"
+           onerror="this.onerror=null;this.src='/img/placeholder.png'">
+    </a>
+  </div>
+  <div class="p-5 flex flex-col flex-1">
+    <div class="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mb-1 font-montserrat"><%= m.category || 'Electric Scooter' %></div>
+    <h3 class="font-heading font-semibold text-[17px] text-[#222] mb-1">
+      <a href="/models/<%= m.slug %>" class="hover:text-brand-accent transition-colors"><%= m.name %></a>
+    </h3>
+    <p class="text-[13px] text-[#555] mb-3 line-clamp-2"><%= m.tagline || '' %></p>
+    <div class="font-heading font-bold text-[20px] text-brand-orange mt-auto mb-4">
+      <% if (m.price > 0) { %><%= money(m.price) %><% } else { %><span class="text-[15px] text-[#555]">Contact for price</span><% } %>
+    </div>
+    <div class="flex gap-2">
+      <a href="/models/<%= m.slug %>" class="flex-1 text-center pill-btn pill-black !py-2 !text-[11px]">Learn More</a>
+      <form method="POST" action="/cart/add" class="flex-1">
+        <input type="hidden" name="slug" value="<%= m.slug %>">
+        <input type="hidden" name="redirect" value="<%= typeof redirect !== 'undefined' ? redirect : '/cart' %>">
+        <button class="w-full pill-btn pill-white border border-black/10 !py-2 !text-[11px]" type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </div>
+</div>

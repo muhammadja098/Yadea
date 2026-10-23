@@ -1,0 +1,56 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="banner-bg text-white py-20 text-center px-4">
+  <div class="max-w-3xl mx-auto space-y-3">
+    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Experience the Ride</span>
+    <h1 class="font-montserrat font-black text-4xl sm:text-5xl tracking-wide">Book a Test Ride</h1>
+    <p class="text-sm text-gray-300">Experience YADEA electric riding for yourself. Fill the form and our nearest dealer will contact you.</p>
+  </div>
+</section>
+
+<main id="content" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+    <div class="lg:col-span-2 bg-white rounded-3xl border border-gray-100 shadow-sm p-8">
+      <% if (typeof query !== 'undefined' && query.sent) { %>
+        <div class="bg-green-50 border border-green-200 text-green-700 text-sm rounded-xl px-5 py-4 mb-6 flex items-center gap-3">
+          <i class="fa-solid fa-circle-check"></i>
+          Your test ride request has been received. Our dealer will call you to confirm.
+        </div>
+      <% } %>
+      <h2 class="font-montserrat font-extrabold text-xl text-gray-900 mb-6">Request your test ride</h2>
+      <form method="POST" action="/test-drive" class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div><label class="field-label">Full Name *</label><input name="name" required class="field-input"></div>
+        <div><label class="field-label">Phone *</label><input name="phone" required class="field-input"></div>
+        <div><label class="field-label">Email</label><input type="email" name="email" class="field-input"></div>
+        <div><label class="field-label">City *</label><input name="city" required class="field-input"></div>
+        <div class="sm:col-span-2">
+          <label class="field-label">Preferred Model *</label>
+          <select name="model" required class="field-input">
+            <option value="">Select a model</option>
+            <% models.forEach(function (m) { %>
+              <option value="<%= m.name %>" <%= (typeof query !== 'undefined' && query.model === m.name) ? 'selected' : '' %>><%= m.name %></option>
+            <% }); %>
+          </select>
+        </div>
+        <div class="sm:col-span-2"><label class="field-label">Message</label><textarea name="message" rows="4" placeholder="Preferred date/time, location..." class="field-input"></textarea></div>
+        <div class="sm:col-span-2">
+          <button class="pill-btn pill-black" type="submit">Book Test Ride</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="bg-brand-dark text-white rounded-3xl p-8 shadow-lg">
+      <h3 class="font-montserrat font-extrabold text-lg mb-3">Why book a test ride?</h3>
+      <p class="text-xs text-gray-400 leading-relaxed mb-5">Feel the instant torque, smooth throttle and silent ride of a YADEA electric scooter before you buy.</p>
+      <ul class="space-y-3 text-xs text-gray-300 mb-6">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-plus text-brand-orange"></i> Free and no obligation</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-plus text-brand-orange"></i> Available at 120+ dealers nationwide</li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-plus text-brand-orange"></i> Expert guidance from trained staff</li>
+      </ul>
+      <a href="/find-a-dealer" class="block text-center px-6 py-2.5 bg-white hover:bg-gray-100 text-black font-semibold rounded-md text-xs uppercase tracking-wider transition-all">Find a Dealer</a>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,17 @@
+{
+  "name": "yadea-pakistan-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Yadea Pakistan (yadea.com.pk) website clone - Node.js + Express + EJS + SQLite",
+  "main": "server.js",
+  "scripts": {
+    "seed": "node db/seed.js",
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "rebuild": "node db/seed.js && node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

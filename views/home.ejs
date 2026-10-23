@@ -1,0 +1,491 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="content">
+
+  <!-- ================= YADEA INTRO BANNER ================= -->
+  <section class="relative w-full flex items-center justify-center overflow-hidden min-h-[250px] md:min-h-[300px]"
+           style="background-image:url('/img/intro-city-night.png');background-size:cover;background-position:center;background-color:#0A0605">
+    <div class="absolute inset-0" style="background:linear-gradient(180deg, rgba(0,0,0,.45) 0%, rgba(0,0,0,.30) 45%, rgba(0,0,0,.62) 100%)"></div>
+    <div class="absolute inset-0" style="background:radial-gradient(ellipse 65% 85% at 50% 50%, rgba(0,0,0,0) 0%, rgba(0,0,0,.50) 100%)"></div>
+    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 50% 60% at 50% 45%, rgba(242,101,34,.14) 0%, rgba(242,101,34,0) 70%)"></div>
+
+    <div class="relative z-10 w-full max-w-4xl mx-auto text-center px-5 py-12 md:py-14">
+      <h1 class="font-heading font-bold uppercase text-[#F26522] text-[34px] sm:text-[48px] md:text-[64px] leading-none tracking-[0.12em] mb-4"
+          style="text-shadow:0 2px 18px rgba(242,101,34,.35)">YADEA</h1>
+      <p class="text-white text-[13px] sm:text-[15px] md:text-[17px] leading-[1.7] max-w-3xl mx-auto"
+         style="text-shadow:0 1px 6px rgba(0,0,0,.8)"><%= H.hero_intro %></p>
+    </div>
+  </section>
+
+  <!-- ================= LATEST MODELS ================= -->
+  <section id="products" class="models-gradient py-14 md:py-20 overflow-hidden">
+    <div class="max-w-[1300px] mx-auto px-5">
+      <h2 class="font-heading font-bold text-black text-center text-[36px] md:text-[54px] leading-tight mb-8 md:mb-10">Latest Models</h2>
+
+      <div class="overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0 pb-1 mb-10 md:mb-12" style="scrollbar-width:none;-ms-overflow-style:none">
+        <div class="flex justify-start md:justify-center min-w-max">
+          <div class="inline-flex bg-white rounded-full p-1.5 shadow-[0_2px_12px_rgba(0,0,0,.07)]">
+            <% latest.forEach(function (m, i) { %>
+              <button onclick="switchModel(<%= i %>)" id="tab-m<%= i %>" type="button"
+                      class="seg-tab model-tab <%= i === 0 ? 'active' : '' %>"><%= m.tab %></button>
+            <% }); %>
+          </div>
+        </div>
+      </div>
+
+      <% latest.forEach(function (m, i) { %>
+      <div class="model-panel <%= i === 0 ? '' : 'hidden' %>" data-index="<%= i %>">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+
+          <div class="flex justify-center order-1">
+            <img src="<%= m.hero_image %>" alt="<%= m.name %>"
+                 class="max-h-[240px] sm:max-h-[320px] lg:max-h-[400px] w-auto max-w-full object-contain drop-shadow-xl"
+                 loading="<%= i === 0 ? 'eager' : 'lazy' %>"
+                 onerror="this.onerror=null;this.src='/img/placeholder.png'">
+          </div>
+
+          <div class="order-2 text-center lg:text-left">
+            <h3 class="font-heading font-bold text-black text-[28px] sm:text-[36px] lg:text-[44px] leading-tight mb-6"><%= m.name %></h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-xl mx-auto lg:mx-0">
+              <% (m.specList || []).forEach(function (sp) { %>
+                <div class="bg-white/90 rounded-xl px-4 py-3 shadow-[0_1px_5px_rgba(0,0,0,.06)] text-[13px] md:text-[14px] text-black text-center leading-snug"><%= sp %></div>
+              <% }); %>
+            </div>
+            <div class="flex flex-wrap gap-3 justify-center lg:justify-start mt-7">
+              <a href="/models/<%= m.slug %>" class="pill-btn pill-black">Learn More</a>
+              <a href="/test-drive?model=<%= encodeURIComponent(m.name) %>" class="pill-btn pill-white border border-black/10">Book a Test Ride</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </section>
+
+  <!-- ================= 4. TTFAR TECHNOLOGY ================= -->
+  <section class="ttfar-bg py-24 relative">
+    <div class="max-w-[1300px] mx-auto px-5 relative z-10 max-w-3xl">
+      <h2 class="font-heading font-semibold text-[42px] md:text-[60px] leading-[1.3] text-white big-overlay-title mb-6">TTFAR Technology</h2>
+      <p class="text-[16px] md:text-[18px] leading-[37px] text-white mb-8">Built on integrated motor, energy retrieving controller, and battery systems, Yadea TTFAR Technology delivers longer range, stable power output, and consistent riding performance.</p>
+      <div class="space-y-3 mb-8">
+        <% H.lithium_points.forEach(function (p) { %>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-circle text-[8px] text-brand-orange"></i>
+            <span class="text-white text-[16px] font-medium"><%= p.title %></span>
+          </div>
+        <% }); %>
+      </div>
+      <a href="/products" class="pill-btn pill-white inline-block">Explore EV Range</a>
+    </div>
+  </section>
+
+  <!-- ================= POPULAR PRODUCTS ================= -->
+  <% if (popular.length) { %>
+  <section class="popular-section w-full py-16 md:py-20 text-center overflow-hidden">
+    <div class="max-w-[1300px] mx-auto px-5">
+      <h2 class="pp-title">Popular Products</h2>
+
+      <div class="mt-7 md:mt-8 overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0 pb-1" style="scrollbar-width:none;-ms-overflow-style:none">
+        <div class="min-w-max inline-block">
+          <div class="pp-tabbar" role="tablist" aria-label="Popular products">
+            <% popular.forEach(function (p, i) { %>
+              <button type="button" role="tab" id="pp-tab-<%= i %>" aria-selected="<%= i === 0 ? 'true' : 'false' %>"
+                      onclick="switchPopular(<%= i %>)" class="pp-tab <%= i === 0 ? 'active' : '' %>"><%= p.tab %></button>
+            <% }); %>
+          </div>
+        </div>
+      </div>
+
+      <div id="pp-stage" class="pp-stage mt-12 md:mt-16 flex flex-col items-center">
+        <img id="pp-img" src="<%= popular[0].image %>" alt="<%= popular[0].name %>" class="pp-img"
+             onerror="this.onerror=null;this.src='/img/placeholder.png'">
+        <div class="pp-banner mt-10 md:mt-14">
+          <p id="pp-name" class="pp-banner-name"><%= popular[0].name %></p>
+          <p id="pp-price" class="pp-banner-price"><% if (popular[0].price > 0) { %><%= money(popular[0].price) %><% } %></p>
+          <a id="pp-learn" href="/models/<%= popular[0].slug %>" class="pp-learn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ================= ADVENTURE / GREENER FUTURE ================= -->
+  <section class="adventure-bg adv-section">
+    <noscript><style>.adv-anim,.tr-anim{opacity:1;transform:none}</style></noscript>
+    <div class="adv-overlay"></div>
+    <div class="adv-inner">
+
+      <p class="adv-label adv-anim" style="--d:0s">Adventure</p>
+
+      <h2 class="adv-title adv-anim" style="--d:.15s">Greener Electric Future with Yadea</h2>
+
+      <div class="adv-icons">
+        <div class="adv-item adv-anim" style="--d:.30s">
+          <div class="adv-icon">
+            <svg viewBox="0 0 24 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              <text x="13.5" y="18.4" text-anchor="middle" font-size="5.2" font-family="Roboto, sans-serif" font-weight="700" fill="currentColor" stroke="none">CO2</text>
+              <path d="M7 23v6 M5.4 27.4l1.6 1.6 1.6-1.6"></path>
+              <path d="M12 23v6 M10.4 27.4l1.6 1.6 1.6-1.6"></path>
+              <path d="M17 23v6 M15.4 27.4l1.6 1.6 1.6-1.6"></path>
+            </svg>
+          </div>
+          <span class="adv-icon-label">Zero CO2 Emissions</span>
+        </div>
+
+        <div class="adv-item adv-anim" style="--d:.45s">
+          <div class="adv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <g transform="rotate(45 12 12)">
+                <path d="M23 4v6h-6"></path>
+                <path d="M1 20v-6h6"></path>
+                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"></path>
+                <path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+              </g>
+            </svg>
+          </div>
+          <span class="adv-icon-label">Reduced Fuel Dependency</span>
+        </div>
+
+        <div class="adv-item adv-anim" style="--d:.60s">
+          <div class="adv-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              <path d="M15 16.5c.6-3 3.4-4.8 6.3-4.9.1 2.9-1.9 5.8-4.9 6.3-1.2.2-1.8-.3-1.4-1.4z"></path>
+              <path d="M15 16.5c1.5-.9 3.7-2.1 6.3-4.9"></path>
+            </svg>
+          </div>
+          <span class="adv-icon-label">Sustainable Mobility</span>
+        </div>
+      </div>
+
+      <p class="adv-desc adv-anim" style="--d:.75s">YADEA electric vehicles are designed to support a greener mobility ecosystem by reducing carbon dioxide emissions, improving energy efficiency, and lowering dependence on fossil fuels. Through thoughtful engineering and electric vehicle technology, YADEA contributes to cleaner urban mobility and a more sustainable future.</p>
+
+      <div class="adv-cta adv-anim" style="--d:.9s">
+        <a href="/test-drive" class="adv-btn">Book a Test Ride</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= BOOK A TEST RIDE CARDS ================= -->
+  <section class="tr-section relative">
+    <div class="shape-drops">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none" fill="#fff"><path d="M0,0 L1200,0 L1200,10 C1100,55 1000,5 900,35 C800,65 700,15 600,40 C500,65 400,10 300,35 C200,60 100,15 0,45 Z"/></svg>
+    </div>
+    <div class="tr-grid">
+      <% var trCards = [
+        { img: '/img/t5l.jpg', title: 'Step into smarter city riding with Yadea T5L.', model: 'Yadea T5L' },
+        { img: '/img/velax.jpg', title: 'Experience the urban edge with Yadea Velax.', model: 'Yadea Velax' },
+        { img: '/img/ruibin-l.jpg', title: 'Ride the future in style with Ruibin L.', model: 'Ruibin L' }
+      ]; %>
+      <% trCards.forEach(function (c, i) { %>
+        <article class="tr-card tr-anim" style="--d:<%= (i * 0.15).toFixed(2) %>s">
+          <img src="<%= c.img %>" alt="<%= c.title %>" class="tr-img" loading="lazy"
+               onerror="this.onerror=null;this.src='/img/placeholder.png'">
+          <div class="tr-overlay"></div>
+          <div class="tr-content">
+            <h2 class="tr-title"><%= c.title %></h2>
+            <a href="/test-drive?model=<%= encodeURIComponent(c.model) %>" class="tr-btn">Book a Test Ride</a>
+          </div>
+        </article>
+      <% }); %>
+    </div>
+  </section>
+
+  <!-- ================= 8. LITHIUM BATTERIES ================= -->
+  <section class="lithium-bg py-24 relative">
+    <div class="relative z-10 max-w-[1300px] mx-auto px-5">
+      <div class="max-w-3xl">
+        <h2 class="font-heading font-semibold text-[42px] md:text-[60px] leading-[1.3] text-white big-overlay-title mb-6">Lithium Iron Phosphate Batteries</h2>
+        <p class="text-[16px] md:text-[18px] leading-[37px] text-white mb-8">Long Lifespan, Extended Warranty, Reliable for Frequent Riders. High-capacity LFP battery technology - daily commutes are effortless to handle, no range anxiety, just smooth control.</p>
+        <a href="/products" class="pill-btn pill-white inline-block">Explore Lithium Models</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= THE ELECTRIC EXPERIENCE ================= -->
+  <section class="ee-section">
+    <div class="ee-container">
+      <h2 class="ee-heading">The Electric Experience</h2>
+
+      <div class="ee-grid">
+        <% var eeVideos = [
+          {
+            id: 'tu2mbhfVo-w',
+            channel: 'Punjab IT Board Official',
+            title: 'PAVE Program - Self Financing',
+            desc: "The Pakistan Accelerated Vehicle Electrification (PAVE) scheme aims to accelerate the country's transition towards clean, affordable and sustainable transportation, reduce reliance on fossil fuels and support the growth of domestic electric vehicle manufacturing."
+          },
+          {
+            id: 'AB-iP7vWQtk',
+            channel: 'Punjab IT Board Official',
+            title: 'PAVE Program - Bank Lease',
+            desc: "The Pakistan Accelerated Vehicle Electrification (PAVE) scheme aims to accelerate the country's transition towards clean, affordable and sustainable transportation, reduce reliance on fossil fuels and support the growth of domestic electric vehicle manufacturing."
+          },
+          {
+            id: 'yuG6dCi1zA8',
+            channel: 'Yadea Pakistan',
+            title: "Sunil Munj's Review | Yadea Epoch",
+            desc: "Is the Yadea Epoch the game-changer in electric scooters? Sunil Munj takes it for a spin and gives his expert verdict on its performance, battery life, ride quality, and more."
+          }
+        ]; %>
+
+        <% eeVideos.forEach(function (v) { %>
+        <article class="ee-card">
+          <div class="ee-thumb" data-video="<%= v.id %>" role="button" tabindex="0"
+               aria-label="Play video: <%= v.title %>">
+            <img src="https://i.ytimg.com/vi/<%= v.id %>/sddefault.jpg" alt="<%= v.title %> thumbnail" loading="lazy"
+                 onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/<%= v.id %>/hqdefault.jpg'">
+            <span class="ee-play" aria-hidden="true">
+              <svg viewBox="0 0 68 48"><path fill="#FF0000" d="M66.52 7.74a8 8 0 0 0-5.6-5.66C56.1.7 34 .7 34 .7s-22.1 0-26.92 1.38a8 8 0 0 0-5.6 5.66A83.4 83.4 0 0 0 0 24a83.4 83.4 0 0 0 1.48 16.26 8 8 0 0 0 5.6 5.66C11.9 47.3 34 47.3 34 47.3s22.1 0 26.92-1.38a8 8 0 0 0 5.6-5.66A83.4 83.4 0 0 0 68 24a83.4 83.4 0 0 0-1.48-16.26z"/><path fill="#fff" d="M27 34.5l18-10.5-18-10.5z"/></svg>
+            </span>
+          </div>
+
+          <div class="ee-body">
+            <div class="ee-channel">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#FF0000" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8z"/><path fill="#fff" d="M9.5 15.5v-7l6.5 3.5z"/></svg>
+              <span><%= v.channel %></span>
+            </div>
+
+            <div class="ee-title-row">
+              <span class="ee-cat" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 12 22l-9-9V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              </span>
+              <a class="ee-title" href="https://www.youtube.com/watch?v=<%= v.id %>" target="_blank" rel="noopener"><%= v.title %></a>
+            </div>
+
+            <p class="ee-desc"><%= v.desc %></p>
+          </div>
+        </article>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 10. OUR IMPACT ================= -->
+  <section class="bg-brand-dark pt-16 pb-24 relative overflow-hidden">
+    <div class="max-w-[1300px] mx-auto px-5 relative z-10">
+      <div class="text-center mb-12">
+        <h3 class="font-heading font-semibold text-[22px] text-white mb-1">Our</h3>
+        <h2 class="font-heading font-semibold text-[40px] md:text-[54px] text-white">IMPACT</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <% var impactImgs = [
+          'https://yadea.com.pk/wp-content/uploads/2026/03/Global-N0.1.webp',
+          'https://yadea.com.pk/wp-content/uploads/2026/03/Riding-Miles.webp',
+          'https://yadea.com.pk/wp-content/uploads/2026/03/Planting-Tress.webp',
+          'https://yadea.com.pk/wp-content/uploads/2026/03/reduced-co2.webp',
+          'https://yadea.com.pk/wp-content/uploads/2026/03/Millions-Riders.webp'
+        ]; %>
+        <% stats.forEach(function (s, i) { %>
+          <div class="relative rounded-2xl overflow-hidden min-h-[220px] bg-cover bg-center flex items-end group" style="background-image:url('<%= impactImgs[i % impactImgs.length] %>')">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div class="relative z-10 p-6">
+              <div class="font-heading font-bold text-[26px] md:text-[32px] text-brand-orange leading-tight"><%= s.value %></div>
+              <div class="font-montserrat text-[13px] text-white/90 mt-1"><%= s.label %></div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 11. STORES / SUPPORT STRIP ================= -->
+  <section class="stores-gradient relative z-20 pt-16 pb-16">
+    <div class="max-w-[1300px] mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
+      <a href="/find-a-dealer" class="text-center block group bg-white rounded-2xl px-8 py-10 shadow-[0_2px_14px_rgba(0,0,0,.06)] transition-transform hover:-translate-y-1">
+        <img src="/img/logo.svg" alt="Yadea" class="w-[140px] mx-auto mb-5"
+             onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{textContent:'YADEA',style:'display:block;text-align:center;font-family:Montserrat;font-weight:900;letter-spacing:3px;font-size:26px;color:#EB5F1B;margin-bottom:20px'}))">
+        <h4 class="font-heading font-semibold text-[32px] md:text-[40px] text-brand-accent mb-3 group-hover:underline">YADEA STORES</h4>
+        <p class="text-[15px] text-[#333]">Yadea has over 120+ dealerships all across Pakistan</p>
+      </a>
+      <a href="/service-support" class="text-center block group bg-white rounded-2xl px-8 py-10 shadow-[0_2px_14px_rgba(0,0,0,.06)] transition-transform hover:-translate-y-1">
+        <img src="/img/logo.svg" alt="Yadea" class="w-[140px] mx-auto mb-5"
+             onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{textContent:'YADEA',style:'display:block;text-align:center;font-family:Montserrat;font-weight:900;letter-spacing:3px;font-size:26px;color:#EB5F1B;margin-bottom:20px'}))">
+        <h4 class="font-heading font-semibold text-[32px] md:text-[40px] text-brand-accent mb-3 group-hover:underline">SUPPORT CENTER</h4>
+        <p class="text-[15px] text-[#333]">YADEA is committed to its customers quality policies and services</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= 12. WHY YADEA ================= -->
+  <section class="wy-section">
+    <div class="wy-inner">
+      <h2 class="wy-heading">Why Yadea?</h2>
+      <p class="wy-intro">Our high-quality, affordable rides empower you to reduce your carbon footprint while cruising in style and safety. Join us in transforming city travel, one electric ride at a time!</p>
+
+      <div class="wy-grid">
+        <% var wyIcons = ['fa-gears', 'fa-lock', 'fa-shield-halved']; %>
+        <% H.why_yadea.forEach(function (w, i) { %>
+          <div class="wy-card">
+            <i class="fa-solid <%= wyIcons[i % 3] %> wy-icon" aria-hidden="true"></i>
+            <h3 class="wy-title"><%= w.title %></h3>
+            <p class="wy-desc"><%= w.text %></p>
+            <% if (i < 2) { %><span class="wy-plus" aria-hidden="true">+</span><% } %>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 13. YADEA INSIGHTS ================= -->
+  <% if (posts.length) { %>
+  <section id="news" class="insights-bg pt-16 pb-14">
+    <div class="max-w-[1300px] mx-auto px-5">
+      <div class="flex items-center justify-between mb-10">
+        <h2 class="font-heading font-semibold text-[32px] text-[#222]">Yadea Insights</h2>
+        <a href="/news-events" class="pill-btn pill-black">VIEW ALL</a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <% posts.slice(0, 4).forEach(function (p) { %>
+          <article class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+            <a href="/news-events/<%= p.slug %>" class="block bg-gray-50 p-4">
+              <img src="<%= p.image %>" class="w-full h-40 object-contain" alt="<%= p.title %>"
+                   onerror="this.onerror=null;this.src='/img/placeholder.png'">
+            </a>
+            <div class="p-5 flex-1 flex flex-col">
+              <h3 class="font-heading font-semibold text-[15px] text-[#222] leading-snug mb-2">
+                <a href="/news-events/<%= p.slug %>" class="hover:text-brand-accent transition-colors"><%= p.title %></a>
+              </h3>
+              <div class="font-montserrat text-[12px] text-gray-400 mb-2"><%= p.published_at %> / No Comments</div>
+              <% if (p.excerpt) { %><p class="text-[13px] text-[#555] leading-relaxed line-clamp-2 mb-3"><%= p.excerpt %></p><% } %>
+              <a href="/news-events/<%= p.slug %>" class="text-[13px] font-semibold text-brand-orange hover:underline mt-auto font-montserrat">Read More</a>
+            </div>
+          </article>
+        <% }); %>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="/news-events" class="pill-btn pill-black inline-block">VIEW ALL</a>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <!-- ================= 14. MONITOR / INSTAGRAM ================= -->
+  <section class="py-14 bg-white text-center">
+    <div class="max-w-[1300px] mx-auto px-5">
+      <div class="flex flex-col items-center mb-10">
+        <i class="fa-solid fa-compass text-2xl text-black mb-2"></i>
+        <h2 class="font-heading font-semibold text-[24px] text-black">MONITOR</h2>
+        <a href="<%= site.instagram %>" target="_blank" rel="noopener" class="font-heading text-[24px] text-brand-accent hover:underline">@yadeapakistan</a>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <% var igShots = [H.hero_slides[0], H.hero_slides[1], H.hero_slides[2], H.hero_slides[3]].filter(Boolean); %>
+        <% igShots.forEach(function (s) { %>
+          <a href="<%= site.instagram %>" target="_blank" rel="noopener" class="relative group rounded-xl overflow-hidden aspect-square bg-gray-100 block">
+            <img src="<%= s.image %>" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" alt="<%= s.name %>"
+                 onerror="this.onerror=null;this.src='/img/placeholder.png'">
+            <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
+              <i class="fa-brands fa-instagram text-3xl"></i>
+            </div>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <a href="/cart" class="fab-cart" aria-label="Shopping cart">
+    <span class="fab-badge"><%= cartCount %></span>
+    <svg class="fab-svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <path d="M16 10a4 4 0 0 1-8 0"></path>
+    </svg>
+  </a>
+
+<script>
+  (function () {
+    window.switchModel = function (i) {
+      document.querySelectorAll('.model-tab').forEach(function (t) { t.classList.remove('active'); });
+      var tab = document.getElementById('tab-m' + i);
+      if (tab) tab.classList.add('active');
+      document.querySelectorAll('.model-panel').forEach(function (p, k) {
+        if (k === i) {
+          p.classList.remove('hidden');
+          p.style.opacity = 0;
+          requestAnimationFrame(function () { requestAnimationFrame(function () { p.style.opacity = 1; }); });
+        } else {
+          p.classList.add('hidden');
+          p.style.opacity = '';
+        }
+      });
+    };
+
+    var PP_DATA = <%- JSON.stringify(popular.map(function (p) {
+      return { name: p.name, slug: p.slug, image: p.image, price: p.price > 0 ? money(p.price) : '' };
+    })) %>;
+
+    window.switchPopular = function (i) {
+      var d = PP_DATA[i];
+      if (!d) return;
+      document.querySelectorAll('.pp-tab').forEach(function (t, k) {
+        t.classList.toggle('active', k === i);
+        t.setAttribute('aria-selected', k === i ? 'true' : 'false');
+      });
+      var stage = document.getElementById('pp-stage');
+      if (!stage) return;
+      stage.classList.add('switching');
+      setTimeout(function () {
+        var img = document.getElementById('pp-img');
+        img.src = d.image;
+        img.alt = d.name;
+        document.getElementById('pp-name').textContent = d.name;
+        document.getElementById('pp-price').textContent = d.price;
+        document.getElementById('pp-learn').href = '/models/' + d.slug;
+        stage.classList.remove('switching');
+      }, 400);
+    };
+
+    var advEls = document.querySelectorAll('.adv-anim, .tr-anim');
+    if ('IntersectionObserver' in window) {
+      var advIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            en.target.classList.add('is-visible');
+            advIo.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      advEls.forEach(function (el) { advIo.observe(el); });
+    } else {
+      advEls.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+
+    function playThumb(thumb) {
+      if (thumb.dataset.playing) return;
+      thumb.dataset.playing = '1';
+      var id = thumb.dataset.video;
+      var title = thumb.getAttribute('aria-label') || 'YouTube video';
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+      iframe.title = title.replace(/^Play video:\s*/, '');
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      thumb.appendChild(iframe);
+      var play = thumb.querySelector('.ee-play');
+      var img = thumb.querySelector('img');
+      if (play) play.style.display = 'none';
+      if (img) img.style.visibility = 'hidden';
+    }
+
+    document.querySelectorAll('.ee-thumb').forEach(function (thumb) {
+      thumb.addEventListener('click', function () { playThumb(thumb); });
+      thumb.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); playThumb(thumb); }
+      });
+    });
+  })();
+</script>
+
+<%- include('partials/footer') %>

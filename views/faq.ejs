@@ -1,0 +1,32 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="banner-bg text-white py-20 text-center px-4">
+  <div class="max-w-3xl mx-auto space-y-3">
+    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Help Center</span>
+    <h1 class="font-montserrat font-black text-4xl sm:text-5xl tracking-wide">FAQ</h1>
+    <p class="text-sm text-gray-300">You can find our help here &mdash; we have listed some frequently asked questions.</p>
+  </div>
+</section>
+
+<main id="content" class="py-16 bg-gray-50">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+    <% faqs.forEach(function (f) { %>
+      <details class="bg-white rounded-2xl border border-gray-100 shadow-sm group open:border-brand-orange/40 transition-colors">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer select-none px-6 py-5 text-sm font-semibold text-gray-900 list-none">
+          <span><%= f.question %></span>
+          <i class="fa-solid fa-plus text-brand-orange text-xs transition-transform group-open:rotate-45"></i>
+        </summary>
+        <div class="px-6 pb-5 text-xs text-gray-500 leading-relaxed"><%= f.answer %></div>
+      </details>
+    <% }); %>
+
+    <div class="bg-brand-dark rounded-3xl p-10 text-center text-white mt-10">
+      <h3 class="font-montserrat font-extrabold text-xl mb-2">Still need help?</h3>
+      <p class="text-xs text-gray-400 mb-6">Contact us and our team will get back to you quickly.</p>
+      <a href="/contact-us" class="inline-block pill-btn pill-black">Contact Us</a>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

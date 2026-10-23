@@ -1,0 +1,102 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<% if (path === '/product-support') { %>
+
+  <!-- ===================== PRODUCT SUPPORT ===================== -->
+  <section class="ss-hero">
+    <div class="ss-hero-overlay"></div>
+    <div class="ss-hero-inner">
+      <h1 class="ss-hero-title">Product Support</h1>
+    </div>
+  </section>
+
+  <section class="ps-lead-section">
+    <h4 class="ps-lead">
+      Improve your experience with Yadea by taking just a few moments to register your product.
+      We will come back to your in maximum of 48 business hours Yadea product support.
+    </h4>
+  </section>
+
+  <section class="ps-form-section">
+    <h2 class="ps-form-heading">Submit A Ticket</h2>
+
+    <% if (typeof query !== 'undefined' && query.sent) { %>
+      <div class="ps-success">
+        <i class="fa-solid fa-circle-check"></i>
+        Your request has been submitted. Our support team will get back to you.
+      </div>
+    <% } %>
+
+    <form method="POST" action="/product-support" class="ps-form">
+      <input type="text" name="model" placeholder="Chassis Number *" required class="ps-input">
+      <input type="text" name="city" placeholder="Order Id / Dc Number" class="ps-input">
+
+      <div class="ps-select-wrap">
+        <select name="problem" required class="ps-input ps-select">
+          <option value="">Pick Your Problem *</option>
+          <option>Return</option>
+          <option>Replace</option>
+          <option>Product Parts</option>
+          <option>Product Related Questions</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="ps-row">
+        <input type="text" name="name" placeholder="Name *" required class="ps-input">
+        <input type="email" name="email" placeholder="Email *" required class="ps-input">
+      </div>
+
+      <input type="tel" name="phone" placeholder="Phone *" required class="ps-input"
+             pattern="[0-9()#&+*\-=.]+">
+      <textarea name="message" rows="4" placeholder="Tell Us Your Reason *" required class="ps-input"></textarea>
+
+      <label class="ps-check">
+        <input type="checkbox" required>
+        <span>I have read the <a href="/privacy-policy"> Privacy Policy </a> and accept the processing of data for the purposes indicated.</span>
+      </label>
+
+      <div class="ps-submit-wrap">
+        <button type="submit" class="ps-send">Send</button>
+      </div>
+    </form>
+  </section>
+
+<% } else if (path === '/service-support') { %>
+
+  <!-- ===================== SERVICE SUPPORT ===================== -->
+  <section class="ss-hero">
+    <div class="ss-hero-overlay"></div>
+    <div class="ss-hero-inner">
+      <h1 class="ss-hero-title">Service Support</h1>
+    </div>
+  </section>
+
+  <section class="sv-banner">
+    <div class="sv-banner-overlay"></div>
+    <div class="sv-banner-inner">
+      <h2 class="sv-banner-title"><a href="/contact-us">Contact Us</a></h2>
+      <p class="sv-banner-sub"><a href="/contact-us">Click to contact us quickly</a></p>
+    </div>
+  </section>
+
+<% } else { %>
+
+  <!-- ===================== GENERIC PAGE ===================== -->
+  <section class="ss-hero">
+    <div class="ss-hero-overlay"></div>
+    <div class="ss-hero-inner">
+      <h1 class="ss-hero-title"><%= page.title %></h1>
+    </div>
+  </section>
+
+  <section class="support-section">
+    <div class="support-narrow">
+      <div class="prose-yadea text-sm"><%= page.body %></div>
+    </div>
+  </section>
+
+<% } %>
+
+<%- include('partials/footer') %>

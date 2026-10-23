@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Login | Yadea</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="card">
+      <div class="eyebrow center">YADEA ADMIN</div>
+      <h2 style="text-align:center">Sign in</h2>
+      <% if (typeof query !== 'undefined' && query.error) { %>
+        <div class="login-err">Incorrect password. Try again.</div>
+      <% } %>
+      <form method="POST" action="/admin/login">
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password" required autofocus>
+        </div>
+        <button class="btn orange block" type="submit">Login</button>
+      </form>
+      <p class="muted center" style="margin-top:16px;font-size:12.5px">Default password: <strong>yadea123</strong> (change in db settings)</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> | Yadea Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+  <div class="admin-bar">
+    <div class="container">
+      <span class="admin-title">YADEA ADMIN</span>
+      <div class="admin-nav">
+        <a href="/admin" class="<%= path === '/admin' ? 'active' : '' %>">Dashboard</a>
+        <a href="/admin/leads" class="<%= path.startsWith('/admin/leads') ? 'active' : '' %>">Leads</a>
+        <a href="/admin/orders" class="<%= path.startsWith('/admin/orders') ? 'active' : '' %>">Orders</a>
+        <a href="/admin/models" class="<%= path.startsWith('/admin/models') ? 'active' : '' %>">Models</a>
+        <a href="/admin/dealers" class="<%= path.startsWith('/admin/dealers') ? 'active' : '' %>">Dealers</a>
+        <a href="/" target="_blank">View Site ↗</a>
+        <a href="/admin/logout">Logout</a>
+      </div>
+    </div>
+  </div>
+  <main class="section" style="padding-top:34px">
+    <div class="container">

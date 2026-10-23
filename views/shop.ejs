@@ -1,0 +1,65 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="shop-hero">
+  <h1>Our Products</h1>
+</section>
+
+<main id="content" class="shop-section">
+
+  <!-- filters -->
+  <form method="GET" action="/products" class="max-w-[1200px] mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end mb-12">
+    <div>
+      <label class="field-label">Search</label>
+      <input type="text" name="q" value="<%= q %>" placeholder="Search models..." class="field-input">
+    </div>
+    <div>
+      <label class="field-label">Category</label>
+      <select name="category" class="field-input">
+        <option value="">All Categories</option>
+        <% cats.forEach(function (c) { %>
+          <option value="<%= c.slug %>" <%= cat === c.slug ? 'selected' : '' %>><%= c.name %></option>
+        <% }); %>
+      </select>
+    </div>
+    <div>
+      <label class="field-label">Sort by</label>
+      <select name="sort" class="field-input">
+        <option value="featured" <%= sort === 'featured' ? 'selected' : '' %>>Featured</option>
+        <option value="price_asc" <%= sort === 'price_asc' ? 'selected' : '' %>>Price: Low to High</option>
+        <option value="price_desc" <%= sort === 'price_desc' ? 'selected' : '' %>>Price: High to Low</option>
+        <option value="name" <%= sort === 'name' ? 'selected' : '' %>>Name A-Z</option>
+      </select>
+    </div>
+    <div>
+      <button class="shop-card-btn" type="submit" style="width:100%;padding:12px 20px;font-size:15px">Filter</button>
+    </div>
+  </form>
+
+  <% if (models.length) { %>
+    <div class="shop-grid">
+      <% models.forEach(function (m) { %>
+        <article class="shop-card">
+          <a href="/models/<%= m.slug %>" class="shop-card-img">
+            <img src="<%= m.hero_image %>" alt="<%= m.name %>"
+                 onerror="this.onerror=null;this.src='/img/placeholder.png'">
+          </a>
+          <h2 class="shop-card-name"><a href="/models/<%= m.slug %>"><%= m.name %></a></h2>
+          <p class="shop-card-price"><% if (m.price > 0) { %><%= money(m.price) %><% } %></p>
+          <a href="/models/<%= m.slug %>" class="shop-card-btn">Explore More</a>
+        </article>
+      <% }); %>
+    </div>
+  <% } else { %>
+    <div class="max-w-xl mx-auto text-center py-16 px-5">
+      <i class="fa-solid fa-magnifying-glass text-4xl text-gray-300 mb-4"></i>
+      <h3 class="font-heading font-bold text-xl text-gray-900 mb-2">No products found</h3>
+      <p class="text-sm text-gray-500 mb-6">Try a different search or category.</p>
+      <a href="/products" class="shop-card-btn">Reset filters</a>
+    </div>
+  <% } %>
+
+</main>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,97 @@
+<a class="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-2 focus:left-2 focus:bg-brand-orange focus:text-white focus:px-4 focus:py-2 focus:rounded" href="#content">Skip to content</a>
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <div class="max-w-[1300px] mx-auto px-5 flex items-center justify-between h-[74px]">
+    <a href="/" class="flex-shrink-0 flex items-center" aria-label="Yadea Pakistan">
+      <img src="/img/logo.svg" alt="Yadea" class="h-[37px] w-auto"
+           onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{textContent:'YADEA',style:'font-family:Montserrat;font-weight:900;letter-spacing:3px;font-size:22px;color:#000'}))">
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 font-montserrat text-[16px] font-medium">
+      <div class="relative group">
+        <a href="/products" class="flex items-center gap-1 transition-colors hover:text-brand-accent <%= path.startsWith('/products') || path.startsWith('/shop') || path.startsWith('/models') ? 'text-brand-accent' : 'text-black' %>">Products</a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+          <div class="bg-white border border-[#E8E8E8] py-3 w-[520px] grid grid-cols-2 gap-1 shadow-lg">
+            <% navModels.forEach(function (m) { %>
+              <a href="/models/<%= m.slug %>" class="flex items-center justify-between px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">
+                <span><%= m.name %></span>
+                <small class="text-[12px] text-gray-400"><%= money(m.price) %></small>
+              </a>
+            <% }); %>
+            <a href="/products" class="col-span-2 mx-4 mt-2 mb-1 text-center border border-black rounded px-4 py-2 font-montserrat text-[15px] font-bold hover:bg-black hover:text-white transition-colors">Explore More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <a href="/about-us" class="flex items-center gap-1 transition-colors hover:text-brand-accent <%= ['/about-us','/become-a-dealer'].includes(path) ? 'text-brand-accent' : 'text-black' %>">About Yadea</a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+          <div class="bg-white border border-[#E8E8E8] py-2 w-56 shadow-lg">
+            <a href="/about-us" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">About Us</a>
+            <a href="/contact-us" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">Contact Us</a>
+            <a href="/become-a-dealer" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">Become a Dealer</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="/news-events" class="transition-colors hover:text-brand-accent <%= path.startsWith('/news-events') ? 'text-brand-accent' : 'text-black' %>">News &amp; Events</a>
+
+      <div class="relative group">
+        <a href="/find-a-dealer" class="flex items-center gap-1 transition-colors hover:text-brand-accent <%= ['/find-a-dealer','/product-support','/service-support'].includes(path) ? 'text-brand-accent' : 'text-black' %>">Support</a>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+          <div class="bg-white border border-[#E8E8E8] py-2 w-56 shadow-lg text-center">
+            <a href="/service-support" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">Service Support</a>
+            <a href="/product-support" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">Product Support</a>
+            <a href="/faq" class="block px-5 py-2.5 text-[15px] text-black hover:bg-[#FAFAFA] hover:text-brand-accent transition-colors">FAQ</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="/find-a-dealer" class="transition-colors hover:text-brand-accent <%= path === '/find-a-dealer' ? 'text-brand-accent' : 'text-black' %>">Find a Dealer</a>
+    </nav>
+
+    <div class="flex items-center gap-5">
+      <form method="GET" action="/products" class="relative hidden sm:block w-52 lg:w-60">
+        <input type="text" name="q" value="<%= typeof q !== 'undefined' ? q : '' %>" placeholder="Search..."
+               class="w-full bg-[#F5F5F5] rounded-full py-2 pl-4 pr-9 text-[13px] font-montserrat text-gray-700 focus:outline-none focus:ring-1 focus:ring-brand-orange">
+        <button class="absolute right-3 top-2.5 text-gray-500 hover:text-brand-accent" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass text-[13px]"></i>
+        </button>
+      </form>
+      <a href="/cart" class="relative text-black hover:text-brand-accent transition-colors" aria-label="Cart">
+        <i class="fa-solid fa-cart-shopping text-[22px]"></i>
+        <% if (cartCount > 0) { %>
+          <span class="absolute -top-2 -right-2.5 min-w-[18px] h-[18px] px-1 bg-brand-orange text-white text-[10px] font-bold rounded-full flex items-center justify-center font-montserrat"><%= cartCount %></span>
+        <% } %>
+      </a>
+      <button id="mobile-menu-btn" class="lg:hidden text-black p-1 focus:outline-none" aria-label="Menu">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-[#E8E8E8] px-5 pt-2 pb-6 space-y-1 shadow-lg">
+    <a href="/" class="block py-2.5 font-montserrat font-medium text-black hover:text-brand-accent">Home</a>
+    <a href="/products" class="block py-2.5 font-montserrat font-medium text-black hover:text-brand-accent">Products</a>
+    <% navModels.forEach(function (m) { %>
+      <a href="/models/<%= m.slug %>" class="block py-1.5 pl-4 font-montserrat text-[14px] text-gray-600 hover:text-brand-accent"><%= m.name %></a>
+    <% }); %>
+    <a href="/about-us" class="block py-2.5 font-montserrat font-medium text-black hover:text-brand-accent">About Yadea</a>
+    <a href="/news-events" class="block py-2.5 font-montserrat font-medium text-black hover:text-brand-accent">News &amp; Events</a>
+    <a href="/service-support" class="block py-2.5 pl-4 font-montserrat text-[14px] text-gray-600 hover:text-brand-accent">Service Support</a>
+    <a href="/product-support" class="block py-2.5 pl-4 font-montserrat text-[14px] text-gray-600 hover:text-brand-accent">Product Support</a>
+    <a href="/find-a-dealer" class="block py-2.5 font-montserrat font-medium text-black hover:text-brand-accent">Find a Dealer</a>
+    <a href="/test-drive" class="block mt-2 text-center pill-btn pill-black">Book a Test Ride</a>
+    <form method="GET" action="/products" class="pt-3">
+      <input type="text" name="q" placeholder="Search..." class="w-full bg-[#F5F5F5] rounded-full py-2 px-4 text-[13px] font-montserrat">
+    </form>
+  </div>
+</header>
+
+<script>
+  (function () {
+    var btn = document.getElementById('mobile-menu-btn');
+    var menu = document.getElementById('mobile-menu');
+    if (btn && menu) btn.addEventListener('click', function () { menu.classList.toggle('hidden'); });
+  })();
+</script>

@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+
+<h2>Models</h2>
+
+<div class="card" style="margin-top:18px">
+  <table>
+    <thead><tr><th>Image</th><th>Name</th><th>Price (PKR)</th><th>Category</th><th>Stock</th><th>Featured</th><th>Views</th><th></th></tr></thead>
+    <tbody>
+      <% models.forEach(function (m) { %>
+        <tr>
+          <td><img src="<%= m.hero_image %>" alt="" style="width:46px;height:46px;object-fit:contain"></td>
+          <td><strong><%= m.name %></strong><div class="muted" style="font-size:12px">/models/<%= m.slug %></div></td>
+          <td><input form="f<%= m.id %>" type="number" name="price" value="<%= m.price %>" class="mini-input" style="width:120px"></td>
+          <td><%= m.category || '-' %></td>
+          <td>
+            <select form="f<%= m.id %>" name="stock_status" class="mini-select">
+              <% ['in-stock','out-of-stock','pre-order'].forEach(function (s) { %>
+                <option value="<%= s %>" <%= m.stock_status === s ? 'selected' : '' %>><%= s %></option>
+              <% }); %>
+            </select>
+          </td>
+          <td><input form="f<%= m.id %>" type="checkbox" name="featured" value="1" <%= m.featured ? 'checked' : '' %> style="width:auto"></td>
+          <td><%= m.views %></td>
+          <td><button form="f<%= m.id %>" class="btn sm orange" type="submit">Save</button></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>
+
+<% models.forEach(function (m) { %>
+  <form id="f<%= m.id %>" method="POST" action="/admin/models/<%= m.id %>" style="display:none"></form>
+<% }); %>
+
+<%- include('partials/foot') %>

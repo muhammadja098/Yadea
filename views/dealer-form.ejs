@@ -1,0 +1,38 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="bd-hero">
+  <div class="bd-hero-overlay"></div>
+  <div class="bd-hero-inner">
+    <h1 class="bd-hero-title">Become A Dealer</h1>
+  </div>
+</section>
+
+<!-- ===================== DEALERSHIP APPLICATION ===================== -->
+<section class="bd-section">
+  <div class="bd-section-inner">
+    <h2><a href="/become-a-dealer">DEALERSHIP APPLICATION</a></h2>
+
+    <% if (typeof query !== 'undefined' && query.sent) { %>
+      <div style="background:#e6f7e6;border:1px solid #b6e6b6;color:#1c7a1c;border-radius:6px;padding:14px 18px;margin:0 auto 20px;max-width:600px;font-family:'Montserrat',sans-serif;font-size:14px;">
+        Thank you for your interest. Our dealership team will contact you.
+      </div>
+    <% } %>
+
+    <a href="#dealer-form" class="bd-btn">Become a Dealer</a>
+
+    <div class="bd-form-wrap" id="dealer-form">
+      <form method="POST" action="/become-a-dealer">
+        <div class="bd-field"><label>Full Name *</label><input name="name" required></div>
+        <div class="bd-field"><label>Phone *</label><input name="phone" required></div>
+        <div class="bd-field"><label>Email</label><input type="email" name="email"></div>
+        <div class="bd-field"><label>City *</label><input name="city" required></div>
+        <div class="bd-field"><label>Message</label><textarea name="message" placeholder="Tell us about your business and proposed location..."></textarea></div>
+        <button type="submit" class="bd-btn">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

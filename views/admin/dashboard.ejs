@@ -1,0 +1,56 @@
+<%- include('partials/head') %>
+
+<h2>Dashboard</h2>
+<div class="stat-grid">
+  <div class="stat-tile"><div class="n"><%= stats.models %></div><div class="k">Models</div></div>
+  <div class="stat-tile"><div class="n"><%= stats.newLeads %></div><div class="k">New Leads</div></div>
+  <div class="stat-tile"><div class="n"><%= stats.orders %></div><div class="k">Orders</div></div>
+  <div class="stat-tile"><div class="n"><%= money(stats.revenue) %></div><div class="k">Revenue</div></div>
+</div>
+<div class="stat-grid" style="grid-template-columns:repeat(4,1fr)">
+  <div class="stat-tile"><div class="n"><%= stats.dealers %></div><div class="k">Dealers</div></div>
+  <div class="stat-tile"><div class="n"><%= stats.leads %></div><div class="k">Total Leads</div></div>
+  <div class="stat-tile"><div class="n"><%= stats.posts %></div><div class="k">Blog Posts</div></div>
+  <div class="stat-tile"><div class="n"><%= stats.orders %></div><div class="k">Orders Total</div></div>
+</div>
+
+<div class="feature" style="align-items:start;gap:26px">
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Recent Leads</h3><a href="/admin/leads" class="btn sm ghost">View all</a>
+    </div>
+    <table>
+      <thead><tr><th>Name</th><th>Type</th><th>City</th><th>Status</th></tr></thead>
+      <tbody>
+        <% leads.forEach(function (l) { %>
+          <tr>
+            <td><strong><%= l.name %></strong><div class="muted" style="font-size:12px"><%= l.phone || l.email %></div></td>
+            <td><%= l.type.replace('_',' ') %></td>
+            <td><%= l.city %></td>
+            <td><span class="pill <%= l.status %>"><%= l.status %></span></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <h3>Recent Orders</h3><a href="/admin/orders" class="btn sm ghost">View all</a>
+    </div>
+    <table>
+      <thead><tr><th>Ref</th><th>Customer</th><th>Total</th><th>Status</th></tr></thead>
+      <tbody>
+        <% orders.forEach(function (o) { %>
+          <tr>
+            <td><strong><%= o.reference %></strong></td>
+            <td><%= o.customer_name %><div class="muted" style="font-size:12px"><%= o.city %></div></td>
+            <td><%= money(o.total) %></td>
+            <td><span class="pill <%= o.status %>"><%= o.status %></span></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<%- include('partials/foot') %>

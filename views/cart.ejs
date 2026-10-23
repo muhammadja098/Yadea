@@ -1,0 +1,69 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<section class="banner-bg text-white py-20 text-center px-4">
+  <div class="max-w-3xl mx-auto space-y-3">
+    <span class="text-brand-orange font-bold uppercase tracking-widest text-xs">Shopping Bag</span>
+    <h1 class="font-montserrat font-black text-4xl sm:text-5xl tracking-wide">Your Cart</h1>
+  </div>
+</section>
+
+<main id="content" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <% if (!items.length) { %>
+      <div class="bg-white rounded-3xl border border-gray-100 shadow-sm p-16 text-center max-w-xl mx-auto">
+        <i class="fa-solid fa-bag-shopping text-4xl text-gray-300 mb-4"></i>
+        <h3 class="font-montserrat font-bold text-xl text-gray-900 mb-2">Your cart is empty</h3>
+        <p class="text-sm text-gray-500 mb-6">It looks like you haven't added any items to your cart yet.</p>
+        <a href="/products" class="inline-block pill-btn pill-black">Browse Products</a>
+      </div>
+    <% } else { %>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+        <form method="POST" action="/cart/update" class="lg:col-span-2 bg-white rounded-3xl border border-gray-100 shadow-sm divide-y divide-gray-100">
+          <% items.forEach(function (i) { %>
+            <div class="p-6 flex flex-col sm:flex-row sm:items-center gap-4">
+              <img src="<%= i.hero_image %>" alt="<%= i.name %>" class="w-20 h-20 object-contain bg-gray-50 rounded-xl p-1"
+                   onerror="this.onerror=null;this.src='/img/placeholder.png'">
+              <div class="flex-1 min-w-0">
+                <a href="/models/<%= i.slug %>" class="font-montserrat font-bold text-gray-900 hover:text-brand-orange transition-colors"><%= i.name %></a>
+                <div class="text-xs text-gray-400 mt-0.5"><%= money(i.price) %> each</div>
+              </div>
+              <div class="flex items-center gap-4">
+                <input type="number" name="qty_<%= i.slug %>" value="<%= i.qty %>" min="0" max="10"
+                       class="w-20 field-input text-center">
+                <div class="font-montserrat font-bold text-brand-orange w-28 text-right"><%= money(i.price * i.qty) %></div>
+                <button class="text-gray-400 hover:text-red-500 transition-colors text-sm font-semibold" form="rm_<%= i.slug %>" type="submit" aria-label="Remove">
+                  <i class="fa-solid fa-trash-can"></i>
+                </button>
+              </div>
+            </div>
+          <% }); %>
+          <div class="p-6 flex gap-3 flex-wrap">
+            <button class="px-6 py-2.5 bg-black hover:bg-gray-800 text-white font-semibold rounded-md text-xs uppercase tracking-wider transition-colors shadow-md" type="submit">Update Cart</button>
+            <a href="/products" class="px-6 py-2.5 bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 font-semibold rounded-md text-xs uppercase tracking-wider transition-colors">Continue Shopping</a>
+          </div>
+        </form>
+
+        <% items.forEach(function (i) { %>
+          <form id="rm_<%= i.slug %>" method="POST" action="/cart/remove" class="hidden">
+            <input type="hidden" name="slug" value="<%= i.slug %>">
+          </form>
+        <% }); %>
+
+        <div class="bg-brand-dark text-white rounded-3xl p-8 shadow-lg">
+          <h3 class="font-montserrat font-extrabold text-lg mb-6">Cart Summary</h3>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between text-gray-300"><span>Subtotal</span><strong class="text-white"><%= money(subtotal) %></strong></div>
+            <div class="flex justify-between text-gray-300"><span>Shipping</span><span>Calculated at checkout</span></div>
+            <div class="border-t border-gray-700 pt-3 flex justify-between font-montserrat font-bold text-lg">
+              <span>Total</span><span class="text-brand-orange"><%= money(subtotal) %></span>
+            </div>
+          </div>
+          <a href="/checkout" class="block text-center mt-8 pill-btn pill-black">Checkout Now</a>
+        </div>
+      </div>
+    <% } %>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

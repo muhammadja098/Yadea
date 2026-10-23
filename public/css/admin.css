@@ -1,0 +1,21 @@
+/* ---- Admin styles (standalone, keeps dashboard fast + clean) ---- */
+.admin-bar { background: #111; color: #fff; padding: 12px 0; position: sticky; top: 0; z-index: 99; }
+.admin-bar .container { display: flex; align-items: center; gap: 18px; justify-content: space-between; }
+.admin-bar a { color: #d8d8d8; font-size: 13.5px; font-weight: 600; padding: 6px 4px; display: inline-block; }
+.admin-bar a:hover, .admin-bar a.active { color: var(--orange); }
+.admin-nav { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
+.admin-title { font-weight: 900; letter-spacing: 2px; color: #fff; margin-right: 8px; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 30px; }
+.stat-tile { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+.stat-tile .n { font-size: 30px; font-weight: 900; }
+.stat-tile .k { color: var(--gray); font-size: 12.5px; text-transform: uppercase; letter-spacing: .5px; }
+.stat-tile:nth-child(1) .n { color: var(--blue); }
+.stat-tile:nth-child(2) .n { color: var(--orange); }
+.stat-tile:nth-child(3) .n { color: #1c6b2a; }
+.stat-tile:nth-child(4) .n { color: var(--ink); }
+.inline-form { display: inline; }
+.mini-select, .mini-input { padding: 7px 9px; font-size: 13px; border-radius: 8px; border: 1px solid var(--line); width: auto; }
+.login-wrap { max-width: 400px; margin: 90px auto; }
+.login-wrap .card { padding: 34px; }
+.login-err { background: #fdeaea; color: #b32d2d; padding: 12px 16px; border-radius: 8px; font-size: 13.5px; margin-bottom: 18px; }
+@media (max-width: 760px) { .stat-grid { grid-template-columns: 1fr 1fr; } }

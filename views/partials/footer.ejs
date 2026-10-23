@@ -1,0 +1,82 @@
+<footer class="bg-brand-footer text-white">
+  <div class="max-w-[1300px] mx-auto px-5 pt-16 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-[#FFFFFF9C]">
+      <div class="space-y-6">
+        <a href="/" class="block">
+          <img src="/img/logo.svg" alt="Yadea" class="w-[60%] max-w-[160px] brightness-0 invert"
+               onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('span'),{textContent:'YADEA',style:'font-family:Montserrat;font-weight:900;letter-spacing:3px;font-size:22px;color:#fff'}))">
+        </a>
+        <div class="flex gap-3">
+          <a href="<%= site.facebook %>" target="_blank" rel="noopener" aria-label="Facebook" class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-white hover:text-brand-accent transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+          <a href="<%= site.instagram %>" target="_blank" rel="noopener" aria-label="Instagram" class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-white hover:text-brand-accent transition-colors"><i class="fa-brands fa-instagram text-sm"></i></a>
+          <a href="<%= site.youtube %>" target="_blank" rel="noopener" aria-label="YouTube" class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-white hover:text-brand-accent transition-colors"><i class="fa-brands fa-youtube text-sm"></i></a>
+          <a href="<%= site.linkedin %>" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-white hover:text-brand-accent transition-colors"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+          <a href="<%= site.tiktok %>" target="_blank" rel="noopener" aria-label="TikTok" class="w-10 h-10 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-white hover:text-brand-accent transition-colors"><i class="fa-brands fa-tiktok text-sm"></i></a>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="font-montserrat font-semibold text-[25px] leading-[35px] text-white">Get In Touch</h4>
+        <div class="space-y-3">
+          <div class="flex items-center gap-3 font-montserrat text-[16px] font-medium text-[#B1B1B1] hover:text-white transition-colors">
+            <i class="fa-regular fa-envelope text-brand-accent"></i>
+            <a href="mailto:<%= site.email %>"><%= site.email %></a>
+          </div>
+          <div class="flex items-center gap-3 font-montserrat text-[16px] font-medium text-[#B1B1B1] hover:text-white transition-colors">
+            <i class="fa-solid fa-phone text-brand-accent"></i>
+            <a href="tel:<%= site.phone.replace(/[^0-9+]/g,'') %>"><%= site.phone %></a>
+          </div>
+          <div class="flex items-start gap-3 font-montserrat text-[16px] font-medium text-[#B1B1B1]">
+            <i class="fa-solid fa-location-dot text-brand-accent mt-1"></i>
+            <span><%= site.address %></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="font-montserrat font-semibold text-[25px] leading-[35px] text-white">Quick Links</h4>
+        <ul class="space-y-2.5 font-montserrat text-[16px] font-medium text-[#B1B1B1]">
+          <li><a href="/" class="hover:text-[#FC5C04] transition-colors">Home</a></li>
+          <li><a href="/about-us" class="hover:text-[#FC5C04] transition-colors">About Us</a></li>
+          <li><a href="/products" class="hover:text-[#FC5C04] transition-colors">Products</a></li>
+          <li><a href="/news-events" class="hover:text-[#FC5C04] transition-colors">News &amp; Events</a></li>
+          <li><a href="/contact-us" class="hover:text-[#FC5C04] transition-colors">Contact Us</a></li>
+          <li><a href="/become-a-dealer" class="hover:text-[#FC5C04] transition-colors">Become a Dealer</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="font-montserrat font-semibold text-[25px] leading-[35px] text-white">Support</h4>
+        <ul class="space-y-2.5 font-montserrat text-[16px] font-medium text-[#B1B1B1]">
+          <li><a href="/find-a-dealer" class="hover:text-[#FC5C04] transition-colors">Find a Dealer</a></li>
+          <li><a href="/product-support" class="hover:text-[#FC5C04] transition-colors">Product Support</a></li>
+          <li><a href="/service-support" class="hover:text-[#FC5C04] transition-colors">Service Support</a></li>
+          <li><a href="/faq" class="hover:text-[#FC5C04] transition-colors">FAQ</a></li>
+          <li><a href="/test-drive" class="hover:text-[#FC5C04] transition-colors">Book a Test Ride</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <h4 class="font-montserrat font-semibold text-[20px] text-white">Subscribe</h4>
+        <p class="font-montserrat text-[16px] font-normal leading-[26px] text-white">Receive the Latest News from Yadea</p>
+        <form class="flex mt-2" method="POST" action="/newsletter">
+          <input type="hidden" name="redirect" value="<%= path %>">
+          <input type="email" name="email" placeholder="Email" required
+                 class="bg-white text-black text-[14px] font-montserrat px-4 py-2.5 rounded-l w-full focus:outline-none border border-[#e0e0e0]">
+          <button type="submit" class="bg-black hover:bg-[#E85C2A] text-white font-montserrat font-semibold text-[14px] px-5 rounded-r transition-colors">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-montserrat text-[14px] font-normal text-[#FFFFFF94]">
+      <span>&copy; <%= year %> Yadea Technology Group Co.,Ltd. All Rights Reserved.</span>
+      <span class="flex gap-6 text-[#FFFFFF8C]">
+        <a href="/privacy-policy" class="hover:text-[#FC5C04] transition-colors">Privacy &amp; Policy</a>
+        <a href="/terms-and-conditions" class="hover:text-[#FC5C04] transition-colors">Terms &amp; Conditions</a>
+      </span>
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+</html>

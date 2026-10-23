@@ -1,0 +1,109 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="ct-hero">
+  <div class="ct-hero-overlay"></div>
+  <div class="ct-hero-inner">
+    <h1 class="ct-hero-title">Contact Us</h1>
+    <p class="ct-hero-sub">We would love to hear from you.<br>Feel free to reach out using the below details.</p>
+  </div>
+</section>
+
+<!-- ===================== OFFICE 1 (Lahore) ===================== -->
+<section class="ct-row">
+  <div class="ct-row-inner">
+    <div class="ct-col ct-map">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=Plot%20%23%2021-E%2C%20Block%20L%2C%20Gulberg%20iii%2C%20Main%20Ferozepur%2C%20Lahore.&t=m&z=13&output=embed&iwloc=near" title="Plot # 21-E, Block L, Gulberg iii, Main Ferozepur, Lahore."></iframe>
+    </div>
+    <div class="ct-col">
+      <ul class="ct-info">
+        <li><span class="dot"></span><span><b>Address:</b> Plot # 21-E, Block L, Gulberg iii, Main Ferozepur, Lahore.</span></li>
+        <li><span class="dot"></span><span><b>Hours:</b> Mon-Fri 10:00AM - 06:00PM</span></li>
+        <li><a href="tel:(021)%20111%20300%20375"><span class="dot"></span><span><b>Phone:</b> (021) 111 300 375</span></a></li>
+        <li><a href="mailto:hello@yadea.com.pk"><span class="dot"></span><span><b>Email:</b> hello@yadea.com.pk</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OFFICE 2 (Karachi) ===================== -->
+<section class="ct-row col-reverse">
+  <div class="ct-row-inner">
+    <div class="ct-col ct-map">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=1502%2C%2015th%20Floor%2C%20Emerald%20Tower%2C%20%20Clifton%2C%20Block%20V%2C%20%20Karachi%2C%20Pakistan.&t=m&z=13&output=embed&iwloc=near" title="1502, 15th Floor, Emerald Tower, Clifton, Block V, Karachi, Pakistan."></iframe>
+    </div>
+    <div class="ct-col">
+      <ul class="ct-info">
+        <li><span class="dot"></span><span><b>Address:</b> 1502, 15th Floor, Emerald Tower, Clifton, Block V, Karachi, Pakistan.</span></li>
+        <li><span class="dot"></span><span><b>Hours:</b> Mon-Fri 10:00AM - 06:00PM</span></li>
+        <li><a href="tel:(021)%2035863216"><span class="dot"></span><span><b>Phone:</b> (021) 35863216</span></a></li>
+        <li><a href="mailto:hello@yadea.com.pk"><span class="dot"></span><span><b>Email:</b> hello@yadea.com.pk</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OFFICE 3 (Kasur) ===================== -->
+<section class="ct-row">
+  <div class="ct-row-inner">
+    <div class="ct-col ct-map">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=42-km%2C%20Ferozepur%20Road%2C%20Opp.%20Wadana%20Darbar%20Stop%2C%20Lalyani%2C%20District%20Kasur.&t=m&z=13&output=embed&iwloc=near" title="42-km, Ferozepur Road, Opp. Wadana Darbar Stop, Lalyani, District Kasur."></iframe>
+    </div>
+    <div class="ct-col">
+      <ul class="ct-info">
+        <li><span class="dot"></span><span><b>Address:</b> 42-km, Ferozepur Road, Opp. Wadana Darbar Stop, Lalyani, District Kasur.</span></li>
+        <li><span class="dot"></span><span><b>Hours:</b> Mon-Fri 10:00AM - 06:00PM</span></li>
+        <li><a href="tel:049-2716411-3"><span class="dot"></span><span><b>Phone:</b> 049-2716411-3</span></a></li>
+        <li><a href="mailto:hello@yadea.com.pk"><span class="dot"></span><span><b>Email:</b> hello@yadea.com.pk</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== GET IN TOUCH ===================== -->
+<section class="ct-touch">
+  <div class="ct-touch-inner">
+    <h2>Get In Touch</h2>
+    <p>Fill out the form below and we will contact you as soon as possible!</p>
+
+    <% if (typeof query !== 'undefined' && query.sent) { %>
+      <div style="background:#e6f7e6;border:1px solid #b6e6b6;color:#1c7a1c;border-radius:6px;padding:14px 18px;margin:20px auto 0;max-width:600px;font-family:'Poppins',sans-serif;font-size:14px;">
+        Thank you! Your message has been received. Our team will contact you soon.
+      </div>
+    <% } %>
+
+    <form method="POST" action="/contact-us" class="ct-form">
+      <div class="ct-field">
+        <label>Name <span class="ct-req">*</span></label>
+        <input type="text" name="name" required>
+      </div>
+      <div class="ct-field">
+        <label>Message or Email</label>
+        <input type="text" name="email">
+      </div>
+      <div class="ct-field">
+        <label>Phone Number <span class="ct-req">*</span></label>
+        <input type="text" name="phone" required>
+      </div>
+      <div class="ct-field">
+        <label>Subject <span class="ct-req">*</span></label>
+        <select name="subject" required>
+          <option value="" disabled selected>--- Select Choice ---</option>
+          <option value="Dealership">Dealership</option>
+          <option value="Vendor Distribution">Vendor Distribution</option>
+          <option value="Export">Export</option>
+          <option value="Service Dealership">Service Dealership</option>
+          <option value="Product Inquiry">Product Inquiry</option>
+        </select>
+      </div>
+      <div class="ct-field">
+        <label>Comment or Message <span class="ct-req">*</span></label>
+        <textarea name="message" required></textarea>
+      </div>
+      <button type="submit" class="ct-submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

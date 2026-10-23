@@ -1,0 +1,280 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="ss-hero">
+  <div class="ss-hero-overlay"></div>
+  <div class="ss-hero-inner">
+    <h1 class="ss-hero-title">STORE LOCATION</h1>
+  </div>
+</section>
+
+<!-- ===================== INTRO ===================== -->
+<section class="fa-intro">
+  <div class="fa-intro-inner">
+    <h2>Find a Dealer</h2>
+    <p>From test rides, to repairs and check-ups, you can get the help you need, when you need it Yadea dealer in Pakistan.</p>
+  </div>
+</section>
+
+<!-- ===================== STORE LOCATOR ===================== -->
+<section class="fa-locator">
+  <div class="fa-app">
+
+    <!-- filters -->
+    <div class="fa-filters">
+      <div class="fa-fg">
+        <label>Search Location</label>
+        <div class="fa-sbox">
+          <input type="text" id="faSearch" placeholder="Enter City or Outlet Name...">
+          <button id="faSearchBtn" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="fa-fg">
+        <label>Category</label>
+        <div class="fa-mwrap">
+          <button type="button" class="fa-mbtn" id="faCatBtn">All Categories</button>
+          <div class="fa-mdd" id="faCatDD"></div>
+        </div>
+      </div>
+
+      <div class="fa-fg">
+        <label>Distance</label>
+        <select class="fa-sel" id="faDistance">
+          <option value="20">20 Km</option>
+          <option value="40">40 Km</option>
+          <option value="60">60 Km</option>
+          <option value="80">80 Km</option>
+          <option value="100" selected>100 Km</option>
+          <option value="99999">All Pakistan</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- list + map -->
+    <div class="fa-main">
+      <div class="fa-list">
+        <div class="fa-lhead">
+          <div>Locations: <strong id="faCount">0</strong></div>
+          <select id="faSort">
+            <option value="title">Sort by Title</option>
+            <option value="city">Sort by City</option>
+          </select>
+        </div>
+        <div class="fa-items" id="faList">
+          <div class="fa-empty">Loading stores...</div>
+        </div>
+      </div>
+
+      <div class="fa-map">
+        <div id="fa-map"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Leaflet (map) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+(function () {
+  // Store data from EJS
+  var STORES = <%- JSON.stringify(dealers.map(function (d) {
+    return {
+      name: d.name,
+      city: d.city || '',
+      address: d.address || '',
+      sales: d.sales_person || '',
+      phone: d.phone1 || '',
+      lat: d.lat,
+      lng: d.lng,
+      gmaps: d.gmaps || '',
+      hours: d.hours || '',
+      cats: (d.types || 'showroom').split(',').map(function (s) { return s.trim(); }).filter(Boolean)
+    };
+  })) %>;
+
+  var map, markers = [], activeMarker = null;
+  var currentCat = '';
+  var distanceKm = 100;
+  var userPos = null;
+
+  // ---- init map ----
+  function initMap() {
+    map = L.map('fa-map', { scrollWheelZoom: true }).setView([30.3753, 69.3451], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
+
+    // try user location for distance filter
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(function (p) {
+        userPos = { lat: p.coords.latitude, lng: p.coords.longitude };
+        apply();
+      }, function () { /* denied - fine */ });
+    }
+  }
+
+  // haversine distance (km)
+  function dist(a, b) {
+    var R = 6371;
+    var dLat = (b.lat - a.lat) * Math.PI / 180;
+    var dLng = (b.lng - a.lng) * Math.PI / 180;
+    var la1 = a.lat * Math.PI / 180, la2 = b.lat * Math.PI / 180;
+    var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(la1) * Math.cos(la2) * Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+
+  var ICON = L.divIcon({
+    className: '',
+    html: '<div style="width:26px;height:26px;background:#F15A24;border:3px solid #fff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 2px 6px rgba(0,0,0,.4)"></div>',
+    iconSize: [26, 26],
+    iconAnchor: [13, 26]
+  });
+
+  function filtered() {
+    var q = (document.getElementById('faSearch').value || '').toLowerCase().trim();
+    var out = STORES.filter(function (s) {
+      var matchQ = !q || (s.name + ' ' + s.city + ' ' + s.address).toLowerCase().indexOf(q) !== -1;
+      var matchCat = !currentCat || s.cats.indexOf(currentCat) !== -1;
+      var matchDist = true;
+      if (userPos && distanceKm < 99999) matchDist = dist(userPos, s) <= distanceKm;
+      return matchQ && matchCat && matchDist;
+    });
+
+    var sort = document.getElementById('faSort').value;
+    out.sort(function (a, b) {
+      if (sort === 'city') return (a.city || '').localeCompare(b.city || '') || a.name.localeCompare(b.name);
+      return a.name.localeCompare(b.name);
+    });
+    return out;
+  }
+
+  function render() {
+    var list = filtered();
+    document.getElementById('faCount').textContent = list.length;
+    var box = document.getElementById('faList');
+
+    if (!list.length) {
+      box.innerHTML = '<div class="fa-empty">No stores found.</div>';
+    } else {
+      box.innerHTML = list.map(function (s, i) {
+        var tags = s.cats.map(function (c) { return '<span class="fa-badge">' + c + '</span>'; }).join('');
+        var maps = s.gmaps ? '<a class="fa-btn" href="' + s.gmaps + '" target="_blank" rel="noopener">' +
+          '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F15A24" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Map</a>' : '';
+        var call = s.phone ? '<a class="fa-btn" href="tel:' + s.phone + '">' +
+          '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#F15A24" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>' : '';
+        return '<div class="fa-card" data-i="' + i + '">' +
+          '<h3>' + s.name + '</h3>' +
+          (tags ? '<div>' + tags + '</div>' : '') +
+          '<p class="fa-addr">' + s.address + '</p>' +
+          (s.sales ? '<p class="fa-sales"><strong>Sales:</strong> ' + s.sales + '</p>' : '') +
+          (s.hours ? '<p class="fa-status">Open Till <span>' + s.hours + '</span></p>' : '') +
+          '<div class="fa-acts">' + maps + call + '</div>' +
+          '</div>';
+      }).join('');
+    }
+
+    // bind card click -> focus map
+    box.querySelectorAll('.fa-card').forEach(function (card) {
+      card.addEventListener('click', function (e) {
+        if (e.target.closest('a')) return;
+        focusStore(list[parseInt(card.dataset.i, 10)]);
+      });
+    });
+
+    drawMarkers(list);
+  }
+
+  function drawMarkers(list) {
+    markers.forEach(function (m) { map.removeLayer(m); });
+    markers = [];
+
+    list.forEach(function (s) {
+      if (s.lat == null || s.lng == null) return;
+      var m = L.marker([s.lat, s.lng], { icon: ICON }).addTo(map);
+      m.bindPopup('<strong>' + s.name + '</strong><br>' + s.address + (s.phone ? '<br>' + s.phone : ''));
+      m.on('click', function () { focusStore(s, false); });
+      markers.push(m);
+    });
+
+    if (markers.length) {
+      var group = L.featureGroup(markers);
+      map.fitBounds(group.getBounds().pad(0.15), { maxZoom: 12 });
+    }
+  }
+
+  function focusStore(s, doPopup) {
+    if (!s || s.lat == null) return;
+    map.setView([s.lat, s.lng], 14, { animate: true });
+    markers.forEach(function (m) {
+      if (m.getLatLng().lat === s.lat && m.getLatLng().lng === s.lng) m.openPopup();
+    });
+  }
+
+  // ---- category dropdown ----
+  function initCats() {
+    var cats = {};
+    STORES.forEach(function (s) { s.cats.forEach(function (c) { cats[c] = (cats[c] || 0) + 1; }); });
+
+    var dd = document.getElementById('faCatDD');
+    var keys = Object.keys(cats).sort();
+    var html = '<label><input type="checkbox" value="">All Categories</label>';
+    keys.forEach(function (c) {
+      html += '<label><input type="checkbox" value="' + c + '">' + c + ' (' + cats[c] + ')</label>';
+    });
+    dd.innerHTML = html;
+
+    dd.querySelectorAll('input').forEach(function (cb) {
+      cb.addEventListener('change', function () {
+        if (cb.value === '') {
+          // "all" selected -> uncheck others
+          dd.querySelectorAll('input').forEach(function (o) { o.checked = (o === cb); });
+          currentCat = '';
+        } else {
+          dd.querySelector('input[value=""]').checked = false;
+          var checked = Array.prototype.filter.call(dd.querySelectorAll('input:checked'), function (o) { return o.value; }).map(function (o) { return o.value; });
+          currentCat = checked.length ? checked[0] : '';
+          // only single-select for simplicity
+          dd.querySelectorAll('input').forEach(function (o) { if (o !== cb && o.value) o.checked = false; });
+          currentCat = cb.checked ? cb.value : '';
+        }
+        document.getElementById('faCatBtn').textContent = currentCat || 'All Categories';
+        apply();
+      });
+    });
+  }
+
+  function apply() { render(); }
+
+  // ---- events ----
+  document.getElementById('faCatBtn').addEventListener('click', function () {
+    document.getElementById('faCatDD').classList.toggle('open');
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('.fa-mwrap')) document.getElementById('faCatDD').classList.remove('open');
+  });
+  document.getElementById('faSearch').addEventListener('input', apply);
+  document.getElementById('faSearchBtn').addEventListener('click', apply);
+  document.getElementById('faSearch').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); apply(); } });
+  document.getElementById('faDistance').addEventListener('change', function () { distanceKm = parseInt(this.value, 10); apply(); });
+  document.getElementById('faSort').addEventListener('change', apply);
+
+  // ---- boot ----
+  initMap();
+  initCats();
+  render();
+})();
+</script>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,103 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<!-- ===================== HERO ===================== -->
+<section class="ab-hero">
+  <div class="ab-hero-overlay"></div>
+  <div class="ab-hero-inner">
+    <h1 class="ab-hero-title">About Yadea</h1>
+  </div>
+</section>
+
+<!-- ===================== LEAD ===================== -->
+<section class="ab-lead">
+  <div class="ab-lead-inner">
+    <p><a href="/products">Yadea, the world's leading electric two-wheeler brand, has ranked global No.1 in annual sales for the last 8 consecutive years, with product ranges mainly covering high-performance electric motorcycles, electric mopeds, electric bicycles, and electric kick scooters, and is officially distributed by Eiffel Industries Ltd.</a></p>
+  </div>
+</section>
+
+<!-- ===================== VISION / MISSION / PROMISE ===================== -->
+<section class="ab-vmv">
+  <div class="ab-vmv-inner">
+    <div class="ab-vmv-spacer"></div>
+    <div class="ab-vmv-content">
+      <h4>Our wish</h4>
+      <p>Increase Yadea's leadership role in the industry, by creating a new generation that's identified by a green commuting lifestyle.</p>
+      <h4>Our mission</h4>
+      <p>Master the innovation and core technology of electric vehicles, abide by the international safety/quality standards and provide the world with superior solutions for electric mobility.</p>
+      <h4>Our promise</h4>
+      <p>Provide a convenient, safe, free and comfortable ultimate riding experience for our customers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INNOVATION ===================== -->
+<section class="ab-innov">
+  <h3>Innovation and Development</h3>
+  <h6>Yadea focuses on independent R&amp;D (research and development) of products</h6>
+</section>
+
+<!-- ===================== STATS (counters) ===================== -->
+<section class="ab-stats">
+  <div class="ab-stats-inner">
+    <div class="ab-stats-grid" id="abStats1">
+      <div class="ab-counter"><div class="ab-counter-title">Countries and Regions</div><div class="ab-counter-num" data-to="100" data-from="30">30</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">Million Users</div><div class="ab-counter-num" data-to="70" data-from="36">36</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">Distributors</div><div class="ab-counter-num" data-to="4000" data-from="1549">1549</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">Retailers</div><div class="ab-counter-num" data-to="40000" data-from="150000">150000</div></div>
+    </div>
+    <div class="ab-stats-grid" style="margin-top:60px;">
+      <div class="ab-counter"><div class="ab-counter-title">National Level Design Centre</div><div class="ab-counter-num" data-to="6" data-from="0">0</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">National CNAS Laboratory</div><div class="ab-counter-num" data-to="2" data-from="0">0</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">R&amp;D Staff</div><div class="ab-counter-num" data-to="1000" data-from="200">200</div></div>
+      <div class="ab-counter"><div class="ab-counter-title">National Patents</div><div class="ab-counter-num" data-to="1800" data-from="1423">1423</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== AESTHETIC DESIGN ===================== -->
+<section class="ab-aesthetic">
+  <h3>Push the Limits of Aesthetic Design</h3>
+  <p>Acclaimed within the realms of brand, design, and communication</p>
+</section>
+
+<!-- ===================== AWARDS ===================== -->
+<section class="ab-spacer">
+  <div class="ab-awards">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/111_8d70ae513a.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/107_5662de35c5.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/110_37c7101449.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/105_8d5bc5d047.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/112_3e274d211f.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/109_32a75d96c2.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/106_0bca43334f.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+    <img src="https://yadea.com.pk/wp-content/uploads/2026/03/108_84e64d7d8f.webp" alt="Award" loading="lazy" onerror="this.style.visibility='hidden'">
+  </div>
+</section>
+
+<script>
+(function () {
+  function animate(el) {
+    var to = parseFloat(el.dataset.to), from = parseFloat(el.dataset.from);
+    var dur = 2000, start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var prog = Math.min((ts - start) / dur, 1);
+      var val = Math.floor(from + (to - from) * prog);
+      el.textContent = val.toLocaleString();
+      if (prog < 1) requestAnimationFrame(step); else el.textContent = to.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  }
+  var done = false;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting && !done) { done = true; document.querySelectorAll('.ab-counter-num').forEach(animate); }
+    });
+  }, { threshold: 0.2 });
+  var target = document.querySelector('.ab-stats');
+  if (target) io.observe(target);
+})();
+</script>
+
+<%- include('partials/footer') %>

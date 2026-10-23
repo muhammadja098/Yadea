@@ -1,0 +1,55 @@
+<%- include('partials/head', { metaDesc: post.excerpt }) %>
+<%- include('partials/header') %>
+
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+  <nav class="text-xs text-gray-400 flex items-center gap-2">
+    <a href="/" class="hover:text-brand-orange">Home</a><i class="fa-solid fa-chevron-right text-[8px]"></i>
+    <a href="/news-events" class="hover:text-brand-orange">News &amp; Events</a><i class="fa-solid fa-chevron-right text-[8px]"></i>
+    <span class="text-gray-700 font-semibold"><%= post.category.replace(/-/g,' ') %></span>
+  </nav>
+</div>
+
+<main id="content" class="py-10">
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="font-montserrat font-black text-3xl sm:text-4xl text-gray-900 leading-tight"><%= post.title %></h1>
+    <p class="text-xs text-gray-400 mt-3 mb-6"><%= post.published_at %> &middot; <%= post.category.replace(/-/g, ' ') %></p>
+
+    <% if (post.image) { %>
+      <img src="<%= post.image %>" alt="<%= post.title %>" class="w-full rounded-3xl mb-8 border border-gray-100"
+           onerror="this.onerror=null;this.src='/img/placeholder.png'">
+    <% } %>
+
+    <% if (post.excerpt) { %><p class="text-base font-semibold text-gray-800 mb-6 leading-relaxed"><%= post.excerpt %></p><% } %>
+    <div class="prose-yadea text-sm"><%= post.body %></div>
+
+    <% if (post.source_url) { %>
+      <p class="mt-8">
+        <a href="<%= post.source_url %>" target="_blank" rel="noopener" class="inline-block px-8 py-3 bg-white hover:bg-gray-100 text-gray-900 border border-gray-300 font-semibold rounded-md text-xs uppercase tracking-wider transition-colors">Read full article on yadea.com.pk</a>
+      </p>
+    <% } %>
+  </article>
+
+  <% if (more.length) { %>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+    <h2 class="font-montserrat font-extrabold text-2xl text-gray-900 mb-8">More from Yadea</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <% more.forEach(function (p) { %>
+        <article class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <a href="/news-events/<%= p.slug %>" class="block bg-gray-50 p-4">
+            <img src="<%= p.image %>" alt="<%= p.title %>" loading="lazy" class="w-full h-36 object-contain"
+                 onerror="this.onerror=null;this.src='/img/placeholder.png'">
+          </a>
+          <div class="p-5">
+            <div class="text-[11px] text-gray-400 mb-1"><%= p.published_at %></div>
+            <h3 class="font-montserrat font-bold text-sm text-gray-900">
+              <a href="/news-events/<%= p.slug %>" class="hover:text-brand-orange transition-colors"><%= p.title %></a>
+            </h3>
+          </div>
+        </article>
+      <% }); %>
+    </div>
+  </div>
+  <% } %>
+</main>
+
+<%- include('partials/footer') %>

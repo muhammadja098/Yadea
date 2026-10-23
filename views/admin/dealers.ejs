@@ -1,0 +1,23 @@
+<%- include('partials/head') %>
+
+<h2>Dealers <span class="muted" style="font-size:16px;font-weight:600">(<%= dealers.length %>)</span></h2>
+
+<div class="filters" style="margin-top:16px">
+  <div class="field" style="max-width:340px"><input id="dQ" data-dealer-filter placeholder="Search dealers..."></div>
+</div>
+
+<div class="grid cols-3" id="dealerList">
+  <% dealers.forEach(function (d) { %>
+    <div class="dealer-card" data-city="<%= d.city %>" data-search="<%= (d.name+' '+d.city+' '+d.address).toLowerCase() %>">
+      <div class="city"><%= d.city %></div>
+      <h3><%= d.name %></h3>
+      <p><%= d.address %></p>
+      <div class="row">
+        <span><strong><%= d.phone1 %></strong></span>
+        <span class="pill <%= d.types.indexOf('Afterservice') !== -1 ? 'contacted' : 'new' %>"><%= d.types %></span>
+      </div>
+    </div>
+  <% }); %>
+</div>
+
+<%- include('partials/foot') %>

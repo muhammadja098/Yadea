@@ -1,0 +1,43 @@
+<%- include('partials/head') %>
+
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px">
+  <h2>Leads</h2>
+  <div class="admin-nav">
+    <% ['','test_drive','contact','newsletter','dealer_enquiry','support'].forEach(function (t) { %>
+      <a href="/admin/leads<%= t ? '?type='+t : '' %>" class="<%= type === t ? 'active' : '' %>">
+        <%= t ? t.replace('_',' ') : 'All' %>
+      </a>
+    <% }); %>
+  </div>
+</div>
+
+<div class="card" style="margin-top:18px">
+  <table>
+    <thead><tr><th>ID</th><th>Type</th><th>Name</th><th>Contact</th><th>City</th><th>Message</th><th>Status</th><th>Date</th></tr></thead>
+    <tbody>
+      <% leads.forEach(function (l) { %>
+        <tr>
+          <td><%= l.id %></td>
+          <td><span class="pill new" style="font-size:10.5px"><%= l.type.replace('_',' ') %></span></td>
+          <td><strong><%= l.name %></strong><% if (l.model_name) { %><div class="muted" style="font-size:12px"><%= l.model_name %></div><% } %></td>
+          <td><%= l.phone %><div class="muted" style="font-size:12px"><%= l.email %></div></td>
+          <td><%= l.city %></td>
+          <td style="max-width:260px"><span class="muted" style="font-size:12.5px"><%= l.message %></span></td>
+          <td>
+            <form class="inline-form" method="POST" action="/admin/leads/<%= l.id %>/status">
+              <select name="status" class="mini-select" onchange="this.form.submit()">
+                <% ['new','contacted','closed'].forEach(function (s) { %>
+                  <option value="<%= s %>" <%= l.status === s ? 'selected' : '' %>><%= s %></option>
+                <% }); %>
+              </select>
+            </form>
+          </td>
+          <td class="muted" style="font-size:12px"><%= l.created_at %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <% if (!leads.length) { %><div class="empty">No leads yet.</div><% } %>
+</div>
+
+<%- include('partials/foot') %>
